@@ -1,0 +1,1380 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -aul -nt timestamp -uc
+C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4
+videomem.ngc videomem.ngd
+
+Reading NGO file "C:/Users/Aaron/Documents/ise/demo8/videomem.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET "EppAstb"   LOC = "V14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(16)]: NET "EppAstb" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppAstb"   LOC = "V14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(16)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDstb"   LOC = "U14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(17)]: NET "EppDstb" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDstb"   LOC = "U14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(17)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbFlag"   LOC = "V16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(18)]: NET "UsbFlag" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbFlag"   LOC = "V16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(18)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppWait"   LOC = "N9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(19)]: NET "EppWait" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppWait"   LOC = "N9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(19)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<0>"  LOC = "R14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(20)]: NET "EppDB<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<0>"  LOC = "R14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(20)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<1>"  LOC = "R13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(21)]: NET "EppDB<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<1>"  LOC = "R13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(21)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<2>"  LOC = "P13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(22)]: NET "EppDB<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<2>"  LOC = "P13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(22)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<3>"  LOC = "T12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(23)]: NET "EppDB<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<3>"  LOC = "T12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(23)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<4>"  LOC = "N11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(24)]: NET "EppDB<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<4>"  LOC = "N11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(24)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<5>"  LOC = "R11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(25)]: NET "EppDB<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<5>"  LOC = "R11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(25)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<6>"  LOC = "P10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(26)]: NET "EppDB<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<6>"  LOC = "P10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(26)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "EppDB<7>"  LOC = "R10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(27)]: NET "EppDB<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "EppDB<7>"  LOC = "R10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(27)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbClk" LOC = "T15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(29)]: NET "UsbClk" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbClk" LOC = "T15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(29)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbOE"     LOC = "V15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(31)]: NET "UsbOE" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbOE"     LOC = "V15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(31)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbWR"     LOC = "V9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(32)]: NET "UsbWR" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbWR"     LOC = "V9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(32)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbPktEnd" LOC = "V12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(33)]: NET "UsbPktEnd" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbPktEnd" LOC = "V12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(33)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbDir"    LOC = "T16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(35)]: NET "UsbDir" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbDir"    LOC = "T16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(35)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbMode"   LOC = "U15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(36)]: NET "UsbMode" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbMode"   LOC = "U15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(36)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbAdr<0>" LOC = "T14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(38)]: NET "UsbAdr<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbAdr<0>" LOC = "T14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(38)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "UsbAdr<1>" LOC = "V13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(39)]: NET "UsbAdr<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UsbAdr<1>" LOC = "V13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(39)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "RamWait"   LOC = "F5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(53)]: NET "RamWait" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RamWait"   LOC = "F5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(53)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "FlashRp"    LOC = "T5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(55)]: NET "FlashRp" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FlashRp"    LOC = "T5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(55)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "FlashCS"    LOC = "R5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(56)]: NET "FlashCS" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FlashCS"    LOC = "R5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(56)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "FlashStSts" LOC = "D3";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(57)]: NET "FlashStSts"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FlashStSts" LOC = "D3";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(57)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<0>" LOC = "L18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(101)]: NET "seg<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<0>" LOC = "L18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(101)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<1>" LOC = "F18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(102)]: NET "seg<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<1>" LOC = "F18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(102)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<2>" LOC = "D17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(103)]: NET "seg<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<2>" LOC = "D17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(103)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<3>" LOC = "D16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(104)]: NET "seg<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<3>" LOC = "D16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(104)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<4>" LOC = "G14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(105)]: NET "seg<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<4>" LOC = "G14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(105)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<5>" LOC = "J17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(106)]: NET "seg<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<5>" LOC = "J17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(106)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "seg<6>" LOC = "H14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(107)]: NET "seg<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "seg<6>" LOC = "H14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(107)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "dp"     LOC = "C17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(108)]: NET "dp" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "dp"     LOC = "C17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(108)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "an<0>" LOC = "F17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(110)]: NET "an<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<0>" LOC = "F17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(110)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "an<1>" LOC = "H17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(111)]: NET "an<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<1>" LOC = "H17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(111)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "an<2>" LOC = "C18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(112)]: NET "an<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<2>" LOC = "C18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(112)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "an<3>" LOC = "F15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(113)]: NET "an<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<3>" LOC = "F15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(113)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<0>"  LOC = "J14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(116)]: NET "Led<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<0>"  LOC = "J14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(116)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<1>"  LOC = "J15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(117)]: NET "Led<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<1>"  LOC = "J15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(117)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<2>"  LOC = "K15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(118)]: NET "Led<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<2>"  LOC = "K15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(118)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<3>"  LOC = "K14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(119)]: NET "Led<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<3>"  LOC = "K14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(119)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<4>"  LOC = "E17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(120)]: NET "Led<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<4>"  LOC = "E17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(120)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<5>"  LOC = "P15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(121)]: NET "Led<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<5>"  LOC = "P15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(121)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<6>"  LOC = "F4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(122)]: NET "Led<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<6>"  LOC = "F4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(122)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "Led<7>"  LOC = "R4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(123)]: NET "Led<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Led<7>"  LOC = "R4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(123)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<0>" LOC = "G18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(130)]: NET "sw<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<0>" LOC = "G18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(130)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<1>" LOC = "H18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(131)]: NET "sw<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<1>" LOC = "H18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(131)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<2>" LOC = "K18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(132)]: NET "sw<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<2>" LOC = "K18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(132)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<3>" LOC = "K17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(133)]: NET "sw<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<3>" LOC = "K17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(133)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<4>" LOC = "L14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(134)]: NET "sw<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<4>" LOC = "L14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(134)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<5>" LOC = "L13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(135)]: NET "sw<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<5>" LOC = "L13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(135)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<6>" LOC = "N17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(136)]: NET "sw<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<6>" LOC = "N17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(136)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "sw<7>" LOC = "R17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(137)]: NET "sw<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<7>" LOC = "R17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(137)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<0>"  LOC = "B4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(164)]: NET "PIO<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<0>"  LOC = "B4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(164)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<1>"  LOC = "A4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(165)]: NET "PIO<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<1>"  LOC = "A4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(165)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<2>"  LOC = "C3";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(166)]: NET "PIO<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<2>"  LOC = "C3";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(166)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<3>"  LOC = "C4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(167)]: NET "PIO<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<3>"  LOC = "C4";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(167)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<4>"  LOC = "B6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(168)]: NET "PIO<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<4>"  LOC = "B6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(168)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<5>"  LOC = "D5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(169)]: NET "PIO<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<5>"  LOC = "D5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(169)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<6>"  LOC = "C5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(170)]: NET "PIO<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<6>"  LOC = "C5";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(170)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<7>"  LOC = "F7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(171)]: NET "PIO<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<7>"  LOC = "F7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(171)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<8>"  LOC = "E7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(172)]: NET "PIO<8>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<8>"  LOC = "E7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(172)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<9>"  LOC = "A6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(173)]: NET "PIO<9>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<9>"  LOC = "A6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(173)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<10>" LOC = "C7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(174)]: NET "PIO<10>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<10>" LOC = "C7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(174)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<11>" LOC = "F8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(175)]: NET "PIO<11>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<11>" LOC = "F8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(175)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<12>" LOC = "D7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(176)]: NET "PIO<12>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<12>" LOC = "D7";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(176)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<13>" LOC = "E8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(177)]: NET "PIO<13>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<13>" LOC = "E8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(177)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<14>" LOC = "E9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(178)]: NET "PIO<14>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<14>" LOC = "E9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(178)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<15>" LOC = "C9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(179)]: NET "PIO<15>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<15>" LOC = "C9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(179)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<16>" LOC = "A8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(180)]: NET "PIO<16>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<16>" LOC = "A8";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(180)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<17>" LOC = "G9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(181)]: NET "PIO<17>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<17>" LOC = "G9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(181)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<18>" LOC = "F9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(182)]: NET "PIO<18>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<18>" LOC = "F9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(182)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<19>" LOC = "D10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(183)]: NET "PIO<19>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<19>" LOC = "D10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(183)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<20>" LOC = "A10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(184)]: NET "PIO<20>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<20>" LOC = "A10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(184)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<21>" LOC = "B10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(185)]: NET "PIO<21>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<21>" LOC = "B10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(185)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<22>" LOC = "A11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(186)]: NET "PIO<22>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<22>" LOC = "A11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(186)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<23>" LOC = "D11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(187)]: NET "PIO<23>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<23>" LOC = "D11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(187)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<24>" LOC = "E10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(188)]: NET "PIO<24>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<24>" LOC = "E10";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(188)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<25>" LOC = "B11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(189)]: NET "PIO<25>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<25>" LOC = "B11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(189)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<26>" LOC = "C11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(190)]: NET "PIO<26>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<26>" LOC = "C11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(190)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<27>" LOC = "E11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(191)]: NET "PIO<27>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<27>" LOC = "E11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(191)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<28>" LOC = "F11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(192)]: NET "PIO<28>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<28>" LOC = "F11";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(192)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<29>" LOC = "E12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(193)]: NET "PIO<29>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<29>" LOC = "E12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(193)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<30>" LOC = "F12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(194)]: NET "PIO<30>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<30>" LOC = "F12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(194)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<31>" LOC = "A13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(195)]: NET "PIO<31>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<31>" LOC = "A13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(195)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<32>" LOC = "B13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(196)]: NET "PIO<32>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<32>" LOC = "B13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(196)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<33>" LOC = "E13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(197)]: NET "PIO<33>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<33>" LOC = "E13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(197)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<34>" LOC = "A14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(198)]: NET "PIO<34>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<34>" LOC = "A14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(198)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<35>" LOC = "C14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(199)]: NET "PIO<35>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<35>" LOC = "C14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(199)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<36>" LOC = "D14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(200)]: NET "PIO<36>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<36>" LOC = "D14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(200)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<37>" LOC = "B14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(201)]: NET "PIO<37>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<37>" LOC = "B14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(201)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<38>" LOC = "A16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(202)]: NET "PIO<38>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<38>" LOC = "A16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(202)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "PIO<39>" LOC = "B16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(203)]: NET "PIO<39>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "PIO<39>" LOC = "B16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(203)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<0>" LOC = "L15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(206)]: NET "JA<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<0>" LOC = "L15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(206)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<1>" LOC = "K12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(207)]: NET "JA<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<1>" LOC = "K12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(207)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<2>" LOC = "L17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(208)]: NET "JA<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<2>" LOC = "L17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(208)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<3>" LOC = "M15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(209)]: NET "JA<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<3>" LOC = "M15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(209)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<4>" LOC = "K13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(210)]: NET "JA<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<4>" LOC = "K13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(210)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<5>" LOC = "L16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(211)]: NET "JA<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<5>" LOC = "L16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(211)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<6>" LOC = "M14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(212)]: NET "JA<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<6>" LOC = "M14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(212)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JA<7>" LOC = "M16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(213)]: NET "JA<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JA<7>" LOC = "M16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(213)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<0>" LOC = "M13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(214)]: NET "JB<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<0>" LOC = "M13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(214)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<1>" LOC = "R18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(215)]: NET "JB<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<1>" LOC = "R18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(215)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<2>" LOC = "R15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(216)]: NET "JB<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<2>" LOC = "R15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(216)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<3>" LOC = "T17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(217)]: NET "JB<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<3>" LOC = "T17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(217)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<4>" LOC = "P17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(218)]: NET "JB<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<4>" LOC = "P17";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(218)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<5>" LOC = "R16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(219)]: NET "JB<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<5>" LOC = "R16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(219)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<6>" LOC = "T18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(220)]: NET "JB<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<6>" LOC = "T18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(220)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JB<7>" LOC = "U18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(221)]: NET "JB<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JB<7>" LOC = "U18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(221)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<0>" LOC = "G15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(222)]: NET "JC<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<0>" LOC = "G15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(222)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<1>" LOC = "J16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(223)]: NET "JC<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<1>" LOC = "J16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(223)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<2>" LOC = "G13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(224)]: NET "JC<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<2>" LOC = "G13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(224)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<3>" LOC = "H16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(225)]: NET "JC<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<3>" LOC = "H16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(225)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<4>" LOC = "H15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(226)]: NET "JC<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<4>" LOC = "H15";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(226)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<5>" LOC = "F14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(227)]: NET "JC<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<5>" LOC = "F14";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(227)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<6>" LOC = "G16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(228)]: NET "JC<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<6>" LOC = "G16";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(228)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JC<7>" LOC = "J12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(229)]: NET "JC<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JC<7>" LOC = "J12";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(229)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JD<0>" LOC = "J13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(230)]: NET "JD<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JD<0>" LOC = "J13";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(230)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JD<1>" LOC = "M18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(231)]: NET "JD<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JD<1>" LOC = "M18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(231)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JD<2>" LOC = "N18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(232)]: NET "JD<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JD<2>" LOC = "N18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(232)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "JD<3>" LOC = "P18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(233)]: NET "JD<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "JD<3>" LOC = "P18";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(233)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "RsRx" LOC = "U6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(236)]: NET "RsRx" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RsRx" LOC = "U6";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(236)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET "RsTx" LOC = "P9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(237)]: NET "RsTx" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RsTx" LOC = "P9";>
+   [C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf(237)]' could not be found
+   and so the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 122
+
+Total memory usage is 159076 kilobytes
+
+Writing NGD file "videomem.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "videomem.bld"...

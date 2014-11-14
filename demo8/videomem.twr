@@ -1,0 +1,178 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf
+
+Design file:              videomem.ncd
+Physical constraint file: videomem.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+MemDB<0>    |    2.018(R)|    0.521(R)|clk_BUFGP         |   0.000|
+MemDB<1>    |    2.222(R)|    0.711(R)|clk_BUFGP         |   0.000|
+MemDB<2>    |    3.026(R)|    0.941(R)|clk_BUFGP         |   0.000|
+MemDB<3>    |    2.316(R)|    0.737(R)|clk_BUFGP         |   0.000|
+MemDB<4>    |    4.156(R)|   -0.209(R)|clk_BUFGP         |   0.000|
+MemDB<5>    |    3.120(R)|   -0.375(R)|clk_BUFGP         |   0.000|
+MemDB<6>    |    2.652(R)|   -0.103(R)|clk_BUFGP         |   0.000|
+MemDB<7>    |    3.150(R)|   -0.086(R)|clk_BUFGP         |   0.000|
+MemDB<8>    |    2.020(R)|    0.790(R)|clk_BUFGP         |   0.000|
+MemDB<9>    |    2.188(R)|    0.715(R)|clk_BUFGP         |   0.000|
+MemDB<10>   |    2.529(R)|    0.261(R)|clk_BUFGP         |   0.000|
+MemDB<11>   |    3.104(R)|   -0.181(R)|clk_BUFGP         |   0.000|
+MemDB<12>   |    2.090(R)|    1.000(R)|clk_BUFGP         |   0.000|
+MemDB<13>   |    2.920(R)|   -0.094(R)|clk_BUFGP         |   0.000|
+MemDB<14>   |    2.817(R)|   -0.079(R)|clk_BUFGP         |   0.000|
+MemDB<15>   |    3.309(R)|   -0.249(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ps2c
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ps2d        |    2.797(F)|    1.616(F)|ps2c_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock btn<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+MemAdr<2>   |   17.359(F)|btn_3_IBUF        |   0.000|
+MemAdr<3>   |   17.336(F)|btn_3_IBUF        |   0.000|
+MemAdr<4>   |   17.663(F)|btn_3_IBUF        |   0.000|
+MemAdr<5>   |   17.449(F)|btn_3_IBUF        |   0.000|
+MemAdr<6>   |   18.061(F)|btn_3_IBUF        |   0.000|
+MemAdr<7>   |   18.509(F)|btn_3_IBUF        |   0.000|
+MemAdr<8>   |   18.011(F)|btn_3_IBUF        |   0.000|
+MemAdr<9>   |   18.590(F)|btn_3_IBUF        |   0.000|
+MemAdr<10>  |   18.662(F)|btn_3_IBUF        |   0.000|
+MemAdr<11>  |   18.586(F)|btn_3_IBUF        |   0.000|
+MemAdr<12>  |   18.419(F)|btn_3_IBUF        |   0.000|
+MemAdr<13>  |   18.927(F)|btn_3_IBUF        |   0.000|
+MemAdr<14>  |   18.645(F)|btn_3_IBUF        |   0.000|
+MemAdr<15>  |   19.573(F)|btn_3_IBUF        |   0.000|
+MemAdr<16>  |   19.586(F)|btn_3_IBUF        |   0.000|
+MemAdr<17>  |   19.663(F)|btn_3_IBUF        |   0.000|
+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+MemAdr<1>   |   12.047(R)|clk_BUFGP         |   0.000|
+MemAdr<2>   |   25.566(R)|clk_BUFGP         |   0.000|
+MemAdr<3>   |   25.543(R)|clk_BUFGP         |   0.000|
+MemAdr<4>   |   26.074(R)|clk_BUFGP         |   0.000|
+MemAdr<5>   |   26.034(R)|clk_BUFGP         |   0.000|
+MemAdr<6>   |   26.919(R)|clk_BUFGP         |   0.000|
+MemAdr<7>   |   27.367(R)|clk_BUFGP         |   0.000|
+MemAdr<8>   |   26.869(R)|clk_BUFGP         |   0.000|
+MemAdr<9>   |   27.448(R)|clk_BUFGP         |   0.000|
+MemAdr<10>  |   27.645(R)|clk_BUFGP         |   0.000|
+MemAdr<11>  |   27.743(R)|clk_BUFGP         |   0.000|
+MemAdr<12>  |   27.848(R)|clk_BUFGP         |   0.000|
+MemAdr<13>  |   28.356(R)|clk_BUFGP         |   0.000|
+MemAdr<14>  |   28.074(R)|clk_BUFGP         |   0.000|
+MemAdr<15>  |   29.002(R)|clk_BUFGP         |   0.000|
+MemAdr<16>  |   29.015(R)|clk_BUFGP         |   0.000|
+MemAdr<17>  |   29.092(R)|clk_BUFGP         |   0.000|
+MemAdr<18>  |   14.227(R)|clk_BUFGP         |   0.000|
+MemAdr<19>  |   14.953(R)|clk_BUFGP         |   0.000|
+MemAdr<20>  |   13.732(R)|clk_BUFGP         |   0.000|
+MemAdr<21>  |   13.455(R)|clk_BUFGP         |   0.000|
+MemAdr<22>  |   13.983(R)|clk_BUFGP         |   0.000|
+MemAdr<23>  |   12.741(R)|clk_BUFGP         |   0.000|
+MemDB<0>    |   10.764(R)|clk_BUFGP         |   0.000|
+MemDB<1>    |   16.153(R)|clk_BUFGP         |   0.000|
+MemDB<2>    |   16.191(R)|clk_BUFGP         |   0.000|
+MemDB<3>    |   16.440(R)|clk_BUFGP         |   0.000|
+MemDB<4>    |   11.813(R)|clk_BUFGP         |   0.000|
+MemDB<5>    |   16.175(R)|clk_BUFGP         |   0.000|
+MemDB<6>    |   16.437(R)|clk_BUFGP         |   0.000|
+MemDB<7>    |   16.687(R)|clk_BUFGP         |   0.000|
+MemDB<8>    |   11.012(R)|clk_BUFGP         |   0.000|
+MemDB<9>    |   16.697(R)|clk_BUFGP         |   0.000|
+MemDB<10>   |   16.953(R)|clk_BUFGP         |   0.000|
+MemDB<11>   |   17.203(R)|clk_BUFGP         |   0.000|
+MemDB<12>   |   11.035(R)|clk_BUFGP         |   0.000|
+MemDB<13>   |   15.959(R)|clk_BUFGP         |   0.000|
+MemDB<14>   |   16.715(R)|clk_BUFGP         |   0.000|
+MemDB<15>   |   16.963(R)|clk_BUFGP         |   0.000|
+MemWR       |   16.853(R)|clk_BUFGP         |   0.000|
+RamCS       |   15.292(R)|clk_BUFGP         |   0.000|
+vgaBlue<3>  |   16.138(R)|clk_BUFGP         |   0.000|
+vgaGreen<3> |   16.221(R)|clk_BUFGP         |   0.000|
+vgaRed<2>   |   15.768(R)|clk_BUFGP         |   0.000|
+vgaRed<3>   |   15.682(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn<3>         |    7.158|    7.158|         |         |
+clk            |   11.156|         |         |         |
+ps2c           |         |   11.790|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ps2c
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn<3>         |         |         |    6.773|    6.773|
+ps2c           |         |         |         |    4.638|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Nov 13 18:27:56 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 179 MB
+
+
+
