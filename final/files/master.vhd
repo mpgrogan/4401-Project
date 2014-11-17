@@ -133,6 +133,7 @@ begin
 	begin
 		if ( rst_i = '1') then
 			reset1 <= '0';
+			--res <= '0';
 			--current_char <= 30;
 			--current_line <= 40;
 			scan_line <= 0;

@@ -50,7 +50,7 @@ architecture Behavioral of rock_master is
 
 
 	signal current_addr : std_logic_vector(31 downto 0);
-	type state_type is (FIRST,INIT, GETPIXELS1, GETPIXELS2, WAIT4MEMACK);
+	type state_type is (FIRST,INIT, GETPIXELS1, GETPIXELS2, WAIT4MEMACK,ROCKS1,ROCKS2,ROCKS3,ROCKS4,ROCKS5,ROCKS6,ROCKS7);
 	signal state : state_type;
 
 	constant CHARS_PER_LINE : integer := 80;
@@ -66,10 +66,13 @@ architecture Behavioral of rock_master is
 	signal reg_pixels : std_logic_vector(CHAR_WIDTH-1 downto 0);
 	signal color_pixels : std_logic_vector(31 downto 0);
 	signal current_char : integer range 0 to CHARS_PER_LINE-1;
-	signal current_line : integer range 0 to LINES_PER_PAGE-1;
+	signal current_line,current_line1,current_line2,current_line3,current_line4
+	,current_line5,current_line6,current_line7 : integer range 0 to LINES_PER_PAGE-1;
 	signal scan_line : integer range 0 to CHAR_HEIGHT;
 	signal pixelnum : integer range 0 to CHAR_WIDTH-1;
-	signal fall_counter : integer;
+	signal fall_counter1,fall_counter2,fall_counter3,fall_counter4,fall_counter5,
+		fall_counter6,fall_counter7 : integer;
+	signal s1,s2,s3,s4,s5,s6,s7 : integer;
 	
 	signal fall_speed : integer := 10000;
 	signal temp : integer;
@@ -79,7 +82,8 @@ architecture Behavioral of rock_master is
 	signal seed1 : integer range 0 to 4634;
 	signal seed2 : integer range 0 to 4634;
 	signal newrock : integer;
-	signal done: std_logic;
+	signal done1,done2,done3,done4,done5,done6,done7: std_logic;
+	signal rock1,rock2,rock3,rock4,rock5,rock6,rock7 : integer range 0 to CHARS_PER_LINE-1;
 	
 	type rock_array is array (0 to CHARS_PER_LINE -1 ) of std_logic;
 	signal rockA : rock_array;
@@ -146,8 +150,10 @@ begin
 			current_char <= 0;
 			current_line <= 0;
 			scan_line <= 0;
-			done <= '0';
-			fall_counter <= 0;
+			rock_count <= 1;
+			res <= '0';
+			--done <= '0';
+			--fall_counter <= 0;
 			reg_pixels <= X"00";
 			state <= FIRST;
 			
@@ -161,11 +167,28 @@ begin
 			temp2 <= 0;
 			current_line <= 0;
 			scan_line <= 0;
-			fall_counter <= 0;
+--			fall_counter <= 0;
 			temp <= 0;
-			--rock_count <= 7;
+			rock_count <= 1;
 			reg_pixels <= X"00";
 			code <= X"44";
+			
+			s1 <= 10000;
+			s2<= 8000;
+			s3 <= 20000;
+			s4 <= 15000;
+			s5 <= 5000;
+			s6 <= 6000;
+			s7 <= 3000;
+			
+			
+			rock1 <= 1;
+			rock2 <= 3;
+			rock3 <= 6;
+			rock4 <= 11;
+			rock5 <= 37;
+			rock6 <= 54;
+			rock7 <= 65;
 			--this will eventually be replaced with randoms
 --			rockA(4) <= '1';
 --			rockA(7) <= '1';
@@ -177,15 +200,45 @@ begin
 --			rockA(59) <= '1';
 --			rockA(65) <= '1';
 --			rockA(77) <= '1';
-			 state <= INIT;
+			state <= INIT;
 			when INIT =>
 			seed1 <= seed1 + 1;
 
 			if conv_std_logic_vector(current_line*current_char,32) = location then res <= '1'; state <= FIRST; end if;
 			
-			if done = '1' then
-				current_char <= ((seed1*seed2) mod 64) + 1; 
-				done <= '0';
+			if done1 = '1' then
+				rock1 <= ((seed1*seed2) mod 64) + 1; 
+				done1 <= '0';
+			end if;
+			
+			if done2 = '1' then
+				rock2 <= ((seed1*seed2) mod 64) + 1; 
+				done2 <= '0';
+			end if;
+			
+			if done3 = '1' then
+				rock3 <= ((seed1*seed2) mod 64) + 1; 
+				done3 <= '0';
+			end if;
+			
+			if done4 = '1' then
+				rock4 <= ((seed1*seed2) mod 64) + 1; 
+				done4 <= '0';
+			end if;
+			
+			if done5 = '1' then
+				rock5 <= ((seed1*seed2) mod 64) + 1; 
+				done5 <= '0';
+			end if;
+			
+			if done6 = '1' then
+				rock6 <= ((seed1*seed2) mod 64) + 1; 
+				done6 <= '0';
+			end if;
+			
+			if done7 = '1' then
+				rock7 <= ((seed1*seed2) mod 64) + 1; 
+				done7 <= '0';
 			end if;
 			state <= GETPIXELS1;		
 
@@ -197,26 +250,145 @@ begin
 				pixelnum <= 0;
 				
 				-- if the character is a back space, backup a character
-				if fall_counter = 50000 then 
-					fall_counter <= 0;
-					current_line <= current_line + 1;
-					if current_line = LINES_PER_PAGE-1 then current_line <= 0; done <= '1'; end if;
-				elsif fall_counter > 49900 then
+					case rock_count is
+						when 1 =>
+							state <= ROCKS1;
+						when 2 =>
+							state <= ROCKS2;
+						when 3 =>
+							state <= ROCKS3;
+						when 4 =>
+							state <= ROCKS4;
+						when 5 =>
+							state <= ROCKS5;
+						when 6 =>
+							state <= ROCKS6;
+						when 7 =>
+							state <= ROCKS7;
+						when others => state <= WAIT4MEMACK;
+						end case;
+					
+			when ROCKS1 =>
+			current_line <= current_line1;
+			current_char <= rock1;
+				if fall_counter1 = s1 then 
+					fall_counter1 <= 0;
+					current_line1 <= current_line1 + 1;
+					if current_line1 = LINES_PER_PAGE-1 then current_line1 <= 0; done1 <= '1'; end if;
+				elsif fall_counter1 > s1 - 500 then
 					reg_pixels <= X"00";
-					fall_counter <= fall_counter + 1;
+					fall_counter1 <= fall_counter1 + 1;
 				else
-				fall_counter <= fall_counter + 1;
+				fall_counter1 <= fall_counter1 + 1;
 				reg_pixels <= pixels;
 				end if;
+			state <= WAIT4MEMACK;
 			
-					
-					state <= WAIT4MEMACK;
-
+			when ROCKS2 =>
+			current_line <= current_line2;
+			current_char <= rock2;
+				if fall_counter2 = s2 then 
+					fall_counter2 <= 0;
+					current_line2 <= current_line2 + 1;
+					if current_line2 = LINES_PER_PAGE-1 then current_line2 <= 0; done2 <= '1'; end if;
+				elsif fall_counter2 > s2 - 500 then
+					reg_pixels <= X"00";
+					fall_counter2 <= fall_counter2 + 1;
+				else
+				fall_counter2 <= fall_counter2 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
+			when ROCKS3 =>
+			current_line <= current_line3;
+			current_char <= rock3;
+				if fall_counter3 = s3 then 
+					fall_counter3 <= 0;
+					current_line3 <= current_line3 + 1;
+					if current_line3 = LINES_PER_PAGE-1 then current_line3 <= 0; done3 <= '1'; end if;
+				elsif fall_counter3 > s3 - 500 then
+					reg_pixels <= X"00";
+					fall_counter3 <= fall_counter3 + 1;
+				else
+				fall_counter3 <= fall_counter3 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
+			when ROCKS4 =>
+			current_line <= current_line4;
+			current_char <= rock4;
+				if fall_counter4 = s4 then 
+					fall_counter4 <= 0;
+					current_line4 <= current_line4 + 1;
+					if current_line4 = LINES_PER_PAGE-1 then current_line4 <= 0; done4 <= '1'; end if;
+				elsif fall_counter4 > s4 - 500 then
+					reg_pixels <= X"00";
+					fall_counter4 <= fall_counter4 + 1;
+				else
+				fall_counter4 <= fall_counter4 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
+			when ROCKS5 =>
+			current_line <= current_line5;
+			current_char <= rock5;
+				if fall_counter5 = s5 then 
+					fall_counter5 <= 0;
+					current_line5 <= current_line5 + 1;
+					if current_line5 = LINES_PER_PAGE-1 then current_line5 <= 0; done5 <= '1'; end if;
+				elsif fall_counter5 > s5 - 500 then
+					reg_pixels <= X"00";
+					fall_counter5 <= fall_counter5 + 1;
+				else
+				fall_counter5 <= fall_counter5 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
+			when ROCKS6 =>
+			current_line <= current_line6;
+			current_char <= rock6;
+				if fall_counter6 = s6 then 
+					fall_counter6 <= 0;
+					current_line6 <= current_line6 + 1;
+					if current_line6 = LINES_PER_PAGE-1 then current_line6 <= 0; done6 <= '1'; end if;
+				elsif fall_counter6 > s6 - 500 then
+					reg_pixels <= X"00";
+					fall_counter6 <= fall_counter6 + 1;
+				else
+				fall_counter6 <= fall_counter6 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
+			when ROCKS7 => 
+			current_line <= current_line7;
+			current_char <= rock7;
+				if fall_counter7 = s7 then 
+					fall_counter7 <= 0;
+					current_line7 <= current_line7 + 1;
+					if current_line7 = LINES_PER_PAGE-1 then current_line7 <= 0; done7 <= '1'; end if;
+				elsif fall_counter7 > s7 - 500 then
+					reg_pixels <= X"00";
+					fall_counter7 <= fall_counter7 + 1;
+				else
+				fall_counter7 <= fall_counter7 + 1;
+				reg_pixels <= pixels;
+				end if;
+			state <= WAIT4MEMACK;
+			
 			when WAIT4MEMACK =>
+			if conv_std_logic_vector(current_line*current_char,32) = location then res <= '1'; state <= FIRST; end if;
+			if current_line = 0 then reg_pixels <= x"00"; end if;
 			seed2 <= seed2+1;
 				if ( ack_i = '1' ) then
 					if ( scan_line = CHAR_HEIGHT-1 ) then
 						state <= INIT;
+						rock_count <= rock_count + 1;
+						if rock_count = 8 then rock_count <= 1; end if;
 	--					cyc_o <= '0';
 						scan_line <= 0;
 					else

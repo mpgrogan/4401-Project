@@ -29,6 +29,27 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">code</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s1</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">10011100010000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s2</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">1111101000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">100111000100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s4</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">11101010011000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s5</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">1001110001000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s6</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">1011101110000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">s7</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">101110111000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">pixelnum</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rock_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
@@ -86,7 +107,7 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bram_dia</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/wb_vga640x480.vhd</arg>&quot; line <arg fmt="%d" index="2">260</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">11</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">20</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/wb_vga640x480.vhd</arg>&quot; line <arg fmt="%d" index="2">261</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">11</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">20</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bram_dip&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
@@ -134,10 +155,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">alt</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/master.vhd</arg>&quot; line <arg fmt="%d" index="2">321</arg>: The result of a <arg fmt="%d" index="3">7</arg>x<arg fmt="%d" index="4">6</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">12</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/master.vhd</arg>&quot; line <arg fmt="%d" index="2">322</arg>: The result of a <arg fmt="%d" index="3">7</arg>x<arg fmt="%d" index="4">6</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">12</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/master.vhd</arg>&quot; line <arg fmt="%d" index="2">313</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">7</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">10</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/master.vhd</arg>&quot; line <arg fmt="%d" index="2">314</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">7</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">10</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">dat_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -158,10 +179,7 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">shift</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">rock_count</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rockA</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">rockA</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">pixelnum&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -188,10 +206,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">alt</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd</arg>&quot; line <arg fmt="%d" index="2">184</arg>: The result of a <arg fmt="%d" index="3">5</arg>x<arg fmt="%d" index="4">5</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">9</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd</arg>&quot; line <arg fmt="%d" index="2">207</arg>: The result of a <arg fmt="%d" index="3">7</arg>x<arg fmt="%d" index="4">6</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">12</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd</arg>&quot; line <arg fmt="%d" index="2">253</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">5</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">8</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd</arg>&quot; line <arg fmt="%d" index="2">425</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">7</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">10</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btn&lt;2:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -257,80 +275,65 @@
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vcount_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clock_divider</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">seed2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2183" delta="new" >Unit <arg fmt="%s" index="1">videomem_master</arg>: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): </msg>
+
+<msg type="warning" file="Xst" num="2183" delta="new" >Unit <arg fmt="%s" index="1">wb_vga640x480</arg>: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): </msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_intercon/U08/LGNT3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">videomem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">seed2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rock_master</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/state2_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2183" delta="old" >Unit <arg fmt="%s" index="1">videomem_master</arg>: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): </msg>
-
-<msg type="warning" file="Xst" num="2183" delta="old" >Unit <arg fmt="%s" index="1">wb_vga640x480</arg>: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): </msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_intercon/U08/LGNT3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">videomem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/state2_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/state2_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/scancode_available</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/state2_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wb_ps2_kb/scancode_available</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">videomem_master/Mmult_location_mult0001</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rock_master/Mmult_mult0000_mult0000</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rock_master/res</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">videomem_master/state_FSM_FFd7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">videomem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rock_master/state_FSM_FFd5&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rock_master/res</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">videomem</arg>&gt;.
 </msg>
 
 </messages>
