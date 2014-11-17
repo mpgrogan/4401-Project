@@ -1,0 +1,1401 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: videomem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "videomem.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "videomem"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : videomem
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/char8x12_lookup_table.vhd" in Library work.
+Architecture behavioral of Entity char8x12_lookup_table is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/scancode2ascii.vhd" in Library work.
+Architecture behavioral of Entity scancode2ascii is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/clock_divider.vhd" in Library work.
+Architecture behavioral of Entity clock_divider is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/wb_arbiter.vhd" in Library work.
+Architecture arb0001a1 of Entity wb_arbiter is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/wb_intercon.vhd" in Library work.
+Architecture icn0002a1 of Entity wb_intercon is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/master.vhd" in Library work.
+Architecture behavioral of Entity videomem_master is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/wb_vga640x480.vhd" in Library work.
+Architecture behavioral of Entity wb_vga640x480 is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" in Library work.
+Entity <rock_master> compiled.
+Entity <rock_master> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/sram16ctl.vhd" in Library work.
+Architecture behavioral of Entity sram16ctl is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/wb_ps2_kb.vhd" in Library work.
+Architecture behavioral of Entity wb_ps2_kb is up to date.
+Compiling vhdl file "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd" in Library work.
+Architecture behavioral of Entity videomem is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <videomem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <wb_intercon> in library <work> (architecture <ICN0002a1>) with generics.
+	num_addr_bits = 32
+	num_data_bits = 32
+
+Analyzing hierarchy for entity <videomem_master> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <wb_vga640x480> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <rock_master> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sram16ctl> in library <work> (architecture <Behavioral>) with generics.
+	num_page_mode_read_waits = 4
+	num_read_waits = 4
+	num_write_waits = 4
+
+Analyzing hierarchy for entity <wb_ps2_kb> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <wb_arbiter> in library <work> (architecture <arb0001a1>).
+
+Analyzing hierarchy for entity <char8x12_lookup_table> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <scancode2ascii> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <Behavioral>) with generics.
+	divisor = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <videomem> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd" line 97: Unconnected output port 'leds_o' of component 'wb_intercon'.
+Entity <videomem> analyzed. Unit <videomem> generated.
+
+Analyzing generic Entity <wb_intercon> in library <work> (Architecture <ICN0002a1>).
+	num_addr_bits = 32
+	num_data_bits = 32
+Entity <wb_intercon> analyzed. Unit <wb_intercon> generated.
+
+Analyzing Entity <wb_arbiter> in library <work> (Architecture <arb0001a1>).
+Entity <wb_arbiter> analyzed. Unit <wb_arbiter> generated.
+
+Analyzing Entity <videomem_master> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <movement> in unit <videomem_master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reset1> in unit <videomem_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <pixelnum> in unit <videomem_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reset1> in unit <videomem_master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <videomem_master> analyzed. Unit <videomem_master> generated.
+
+Analyzing Entity <char8x12_lookup_table> in library <work> (Architecture <Behavioral>).
+    Set user-defined property "INIT =  000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_00 =  0000000000007E8199BD8181A5817E0000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_01 =  000000000000081C3E7F7F7F773600000000000000007EFFE7C3FFFFDBFF7E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_02 =  0000000000001C08367736081C08000000000000000000081C3E7F3E1C080000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_03 =  0000000000000000183C3C18000000000000000000001C08367F7F3E3E1C0800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_04 =  00000000000000183C66663C1800000000000000FFFFFFFFE7C3C3E7FFFFFFFF" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_05 =  0000000000001E3333331E6C7870780000000000FFFFFFE7C39999C3E7FFFFFF" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_06 =  0000000000000E1F1E1818187858780000000000000018187E183C6666663C00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_07 =  00000000000018DB7E3C66663C7EDB180000000000307870666F6E6C6C7C6C7C" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_08 =  00000000000040707C7E7F7E7C70400000000000000001070F3F7F3F0F070100" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_09 =  00000000000066660066666666666600000000000000183C7E1818187E3C1800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0A =  000000003E6363303E7B6F3E0663633E000000000000D8D8D8D8DEDBDBDBFE00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0B =  0000000000007E183C7E18187E3C18000000000000007F7F7F00000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0C =  000000000000183C7E181818181818000000000000001818181818187E3C1800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0D =  00000000000000000C0E7F0E0C00000000000000000000003070FF7030000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0E =  00000000000000002466FF662400000000000000000000007F03030300000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0F =  00000000000000081C1C3E3E3E7F7F00000000000000007F7F3E3E1C1C1C0800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_10 =  00000000000018180018183C3C3C180000000000000000000000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_11 =  00000000000036367F36367F36363600000000000000000000000000286C6C6C" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_12 =  00000000000063660C183066460000000000000018183E63603C1E03633E1818" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_13 =  000000000000000000000000183030300000000000006E33736F6E1C1C361C00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_14 =  0000000000000C183030303030180C0000000000000030180C0C0C0C0C183000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_15 =  000000000000000018187E18180000000000000000000000361C7F1C36000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_16 =  000000000000000000007F000000000000000000001830303000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_17 =  0000000000000103060C18306040000000000000000018180000000000000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_18 =  0000000000007E1818181818181E18000000000000003E6363676F7B73633E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_19 =  0000000000003E6360603C6060633E000000000000007F63060C183063633E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1A =  0000000000003E6360603F0303037F000000000000003030307F33363C383000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1B =  0000000000000C0C0C0C0C1830637F000000000000003E6363633F0303633E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1C =  0000000000003E6360607E6363633E000000000000003E6363633E6363633E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1D =  0000000000183030300000303000000000000000000000303000003030000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1E =  0000000000000000007F007F0000000000000000000030180C0603060C183000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1F =  00000000000018180018183063633E00000000000000060C18306030180C0600" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_20 =  0000000000006363637F636363361C000000000000007E033B7B7B7B63633E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_21 =  0000000000003C660303030303663C000000000000003F6666663E6666663F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_22 =  0000000000007F6606063E0606667F000000000000001F366666666666361F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_23 =  0000000000003E636373030363633E000000000000000F0606063E0606667F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_24 =  0000000000003C181818181818183C00000000000000636363637F6363636300" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_25 =  0000000000006363331B0F0F1B3363000000000000000E1B1B18181818183C00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_26 =  00000000000063636B6B6B7F776363000000000000007F664606060606060F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_27 =  0000000000003E636363636363633E000000000000006373737B6F6767636300" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_28 =  0000000000603E6B6363636363633E000000000000000F0606063E6666663F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_29 =  0000000000003E6360301C0603633E000000000000006766361E3E6666663F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2A =  0000000000003E6363636363636363000000000000003C1818181818185A7E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2B =  0000000000006363777F6B6B6B636300000000000000081C3663636363636300" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2C =  0000000000003C1818183C66666666000000000000006363361C1C1C36636300" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2D =  0000000000003E060606060606063E000000000000007F6343060C1831637F00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2E =  0000000000003E303030303030303E00000000000000406030180C0603010000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2F =  00000000FF000000000000000000000000000000000000000000000063361C08" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_30 =  0000000000006E3B333E301E0000000000000000000000000000000030181818" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_31 =  0000000000003E630303633E000000000000000000003F666666663E06060700" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_32 =  0000000000003E63037F633E000000000000000000007E333333333E30303800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_33 =  000000003E63607E6363736E000000000000000000001E0C0C0C3F0C0C6C3800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_34 =  0000000000003C181818181C00181800000000000000676666666E3606060700" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_35 =  0000000000006766361E366606060700000000001E3333303030303800303000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_36 =  00000000000063636B6B7F36000000000000000000003C181818181818181C00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_37 =  0000000000003E636363633E0000000000000000000066666666663B00000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_38 =  000000007830303E3333336E00000000000000000F06063E6666663B00000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_39 =  0000000000003E63380E633E000000000000000000000F060606663B00000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3A =  0000000000006E333333333300000000000000000000386C0C0C0C3F0C0C0C00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3B =  000000000000367F6B6B636300000000000000000000081C3663636300000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3C =  000000003E63606E736363630000000000000000000063361C1C366300000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3D =  000000000000701818180E18181870000000000000007F460C18317F00000000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3E =  0000000000000E181818701818180E0000000000000018181818001818181800" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3F =  000000000000007F36361C1C08000000000000000000000000000000003B6E00" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "SRVAL =  000" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <bram1> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT =  000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_00 =  0000000000006E736363636300636300000000001C33183C6663030303663C00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_01 =  0000000000006E3B333E301E00331E0C0000000000003E63037F633E000C1830" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_02 =  0000000000006E3B333E301E00180C060000000000006E3B333E301E00333300" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_03 =  000000001C36183E630303633E0000000000000000006E3B333E301E001C361C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_04 =  0000000000003E63037F633E003333000000000000003E63037F633E00331E0C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_05 =  0000000000003C181818181C006666000000000000003E63037F633E0030180C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_06 =  0000000000003C181818181C00180C060000000000003C181818181C00663C18" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_07 =  000000000063637F6363361C001C361C0000000000006363637F63361C006363" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_08 =  0000000000006EFB1BFED8DB6600000000000000007F06063E06067F000C1830" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_09 =  0000000000003E636363633E00331E0C0000000000007B1B1B1B7F1B1B1B1B7E" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0A =  0000000000003E636363633E0030180C0000000000003E636363633E00636300" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0B =  0000000000006E736363636300180C060000000000006E736363636300331E0C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0C =  0000000000003E63636363633E006363000000003E63606E7363636300636300" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0D =  00000000000018183C660606663C18180000000000003E636363636363006363" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0E =  00000000000018183C187E183C666600000000000000366F66060F0606361C00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_0F =  000000000E1B181818187E181818D870000000000000633333337B33033F633F" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_10 =  0000000000003C181818181C000C18300000000000006E3B333E301E000C1830" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_11 =  0000000000006E3B3333333300060C180000000000003E636363633E000C1830" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_12 =  00000000000063737B6F676363003B6E00000000000067666666663D003B6E00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_13 =  000000000000000000003E001C36361C000000000000000000007E007C36363C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_14 =  000000000000000606067E00000000000000000000003E6363060C0C000C0C00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_15 =  000000007C18306C3B060C1836664606000000000000006060607E0000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_16 =  000000000000183C3C3C1818001818000000000060607E6C7B766C1836664606" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_17 =  00000000000000001B366C361B00000000000000000000006C361B366C000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_18 =  0000000055AA55AA55AA55AA55AA55AA00000000228822882288228822882288" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_19 =  0000000018181818181818181818181800000000EEBBEEBBEEBBEEBBEEBBEEBB" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1A =  0000000018181818181F181F181818180000000018181818181F181818181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1B =  000000006C6C6C6C6C7F000000000000000000006C6C6C6C6C6F6C6C6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1C =  000000006C6C6C6C6C6F606F6C6C6C6C0000000018181818181F181F00000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1D =  000000006C6C6C6C6C6F607F00000000000000006C6C6C6C6C6C6C6C6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1E =  0000000000000000007F6C6C6C6C6C6C0000000000000000007F606F6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_1F =  0000000018181818181F0000000000000000000000000000001F181F18181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_20 =  000000000000000000FF181818181818000000000000000000F8181818181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_21 =  000000001818181818F8181818181818000000001818181818FF000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_22 =  000000001818181818FF181818181818000000000000000000FF000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_23 =  000000006C6C6C6C6CEC6C6C6C6C6C6C000000001818181818F818F818181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_24 =  000000006C6C6C6C6CEC0CFC00000000000000000000000000FC0CEC6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_25 =  000000006C6C6C6C6CEF00FF00000000000000000000000000FF00EF6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_26 =  000000000000000000FF00FF00000000000000006C6C6C6C6CEC0CEC6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_27 =  000000000000000000FF00FF18181818000000006C6C6C6C6CEF00EF6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_28 =  000000001818181818FF00FF00000000000000000000000000FF6C6C6C6C6C6C" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_29 =  000000000000000000FC6C6C6C6C6C6C000000006C6C6C6C6CFF000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2A =  000000001818181818F818F800000000000000000000000000F818F818181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2B =  000000006C6C6C6C6CFF6C6C6C6C6C6C000000006C6C6C6C6CFC000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2C =  0000000000000000001F181818181818000000001818181818FF18FF18181818" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2D =  00000000FFFFFFFFFFFFFFFFFFFFFFFF000000001818181818F8000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2E =  000000000F0F0F0F0F0F0F0F0F0F0F0F00000000FFFFFFFFFFFF000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_2F =  00000000000000000000FFFFFFFFFFFF00000000F0F0F0F0F0F0F0F0F0F0F0F0" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_30 =  0000000003033B67633F1B331E0000000000000000006E3B1B1B1B3B6E000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_31 =  00000000000036363636367F0000000000000000000006060606060646667F00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_32 =  0000000000001E3333331B7E000000000000000000007F63460C180C46637F00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_33 =  000000000000181818183B6E0000000000000000000103063E66666666000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_34 =  0000000000001C3663637F6363361C000000000000007F1C36636363361C7F00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_35 =  0000000000001E336363663C0C067C0000000000000077363636636363361C00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_36 =  00000000000003063E676F7B3E30600000000000000000007EDBDB7E00000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_37 =  00000000000063636363636363633E00000000000000380C06063E06060C3800" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_38 =  0000000000007E0018187E1818000000000000000000007F007F007F00000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_39 =  0000000000007E0030180C060C1830000000000000007E000C18306030180C00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3A =  00000000000C1E1A181818181818181800000000181818181818185878300000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3B =  000000000000003B6E003B6E00000000000000000000001818007E0018180000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3C =  0000000000000000001818000000000000000000000000000000001E33331E00" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3D =  0000000000181C1E1B18181818F8000000000000000000000018000000000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3E =  00000000000000000000001F060C1B0E0000000000000000000000363636361B" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "INIT_3F =  00000000000000000000000000000000000000000000007E7E7E7E7E7E000000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "SRVAL =  000" for instance <bram2> in unit <char8x12_lookup_table>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <bram2> in unit <char8x12_lookup_table>.
+Entity <char8x12_lookup_table> analyzed. Unit <char8x12_lookup_table> generated.
+
+Analyzing Entity <scancode2ascii> in library <work> (Architecture <Behavioral>).
+Entity <scancode2ascii> analyzed. Unit <scancode2ascii> generated.
+
+Analyzing Entity <wb_vga640x480> in library <work> (Architecture <Behavioral>).
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_A =  000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "INIT_B =  000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "SRVAL_A =  000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "SRVAL_B =  000000000" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <gen1.gen2.bram> in unit <wb_vga640x480>.
+Entity <wb_vga640x480> analyzed. Unit <wb_vga640x480> generated.
+
+Analyzing generic Entity <clock_divider> in library <work> (Architecture <Behavioral>).
+	divisor = 2
+Entity <clock_divider> analyzed. Unit <clock_divider> generated.
+
+Analyzing Entity <rock_master> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <temp2> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <temp> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <code> in unit <rock_master> has a constant value of 01000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <pixelnum> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <rock_master> analyzed. Unit <rock_master> generated.
+
+Analyzing generic Entity <sram16ctl> in library <work> (Architecture <Behavioral>).
+	num_page_mode_read_waits = 4
+	num_read_waits = 4
+	num_write_waits = 4
+Entity <sram16ctl> analyzed. Unit <sram16ctl> generated.
+
+Analyzing Entity <wb_ps2_kb> in library <work> (Architecture <Behavioral>).
+Entity <wb_ps2_kb> analyzed. Unit <wb_ps2_kb> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sram16ctl>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/sram16ctl.vhd".
+WARNING:Xst:647 - Input <adr_i<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <data_hi> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit register for signal <dat_o<15:0>>.
+    Found 16-bit tristate buffer for signal <MemDB>.
+    Found 31-bit comparator greatequal for signal <MemAdr_1$cmp_ge0000> created at line 105.
+    Found 31-bit comparator less for signal <MemDB$cmp_lt0000> created at line 108.
+    Found 31-bit register for signal <waits>.
+    Found 31-bit comparator less for signal <waits$cmp_lt0000> created at line 62.
+    Found 31-bit comparator less for signal <waits$cmp_lt0001> created at line 68.
+    Found 31-bit adder for signal <waits$share0000>.
+    Summary:
+	inferred  47 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  16 Tristate(s).
+Unit <sram16ctl> synthesized.
+
+
+Synthesizing Unit <wb_ps2_kb>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/wb_ps2_kb.vhd".
+WARNING:Xst:647 - Input <dat_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <we_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stb_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <adr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state2>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk_i                     (falling_edge)       |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | wait4code                                      |
+    | Power Up State     | wait4code                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 15                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 11                                             |
+    | Clock              | ps2_clk                   (falling_edge)       |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <code>.
+    Found 1-bit register for signal <p>.
+    Found 1-bit xor2 for signal <p$xor0000> created at line 73.
+    Found 8-bit register for signal <scancode>.
+    Found 1-bit register for signal <scancode_available>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred  18 D-type flip-flop(s).
+Unit <wb_ps2_kb> synthesized.
+
+
+Synthesizing Unit <wb_arbiter>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/wb_arbiter.vhd".
+    Found 1-bit register for signal <EDGE>.
+    Found 1-bit register for signal <LASMAS>.
+    Found 1-bit register for signal <LGNT0>.
+    Found 1-bit register for signal <LGNT1>.
+    Found 1-bit register for signal <LGNT2>.
+    Found 1-bit register for signal <LGNT3>.
+    Found 1-bit register for signal <LMAS0>.
+    Found 1-bit register for signal <LMAS1>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <wb_arbiter> synthesized.
+
+
+Synthesizing Unit <scancode2ascii>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/scancode2ascii.vhd".
+WARNING:Xst:646 - Signal <data<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <scancode2ascii> synthesized.
+
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/clock_divider.vhd".
+    Found 1-bit register for signal <clk>.
+    Found 1-bit register for signal <vcount<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <clock_divider> synthesized.
+
+
+Synthesizing Unit <wb_intercon>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/wb_intercon.vhd".
+WARNING:Xst:1305 - Output <leds_o> is never assigned. Tied to value 00000000.
+    Found 32-bit 4-to-1 multiplexer for signal <DWR>.
+    Found 1-bit 4-to-1 multiplexer for signal <WE>.
+    Found 32-bit 4-to-1 multiplexer for signal <ADR>.
+    Found 32-bit 4-to-1 multiplexer for signal <DAT_RD>.
+    Found 1-bit 4-to-1 multiplexer for signal <STB>.
+    Summary:
+	inferred  98 Multiplexer(s).
+Unit <wb_intercon> synthesized.
+
+
+Synthesizing Unit <wb_vga640x480>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/wb_vga640x480.vhd".
+WARNING:Xst:1305 - Output <dat_o> is never assigned. Tied to value 00000000000000000000000000000000.
+WARNING:Xst:2563 - Inout <res> is never assigned. Tied to value Z.
+WARNING:Xst:1780 - Signal <rcount> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pdata> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <line_buffer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bram_dob> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <bram_dipb> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <bram_dipa> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <bram_dia> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | wait4ack                                       |
+    | Power Up State     | wait4ack                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/wb_vga640x480.vhd" line 260: The result of a 10x11-bit multiplication is partially used. Only the 20 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit tristate buffer for signal <res>.
+    Found 20-bit adder for signal <adr_o$add0000>.
+    Found 21-bit adder for signal <adr_o$add0001> created at line 260.
+    Found 20-bit adder for signal <adr_o$addsub0000>.
+    Found 10-bit subtractor for signal <adr_o$addsub0001> created at line 260.
+    Found 10x11-bit multiplier for signal <adr_o$mult0001> created at line 260.
+    Found 10-bit adder for signal <bram_addra$add0000> created at line 241.
+    Found 10-bit comparator less for signal <cyc_o$cmp_lt0000> created at line 263.
+    Found 10-bit comparator greatequal for signal <hdisplay_valid$cmp_ge0000> created at line 273.
+    Found 10-bit comparator lessequal for signal <hdisplay_valid$cmp_le0000> created at line 273.
+    Found 10-bit comparator greatequal for signal <hsync_internal$cmp_ge0000> created at line 282.
+    Found 10-bit comparator less for signal <hsync_internal$cmp_lt0000> created at line 282.
+    Found 10-bit up counter for signal <line_count>.
+    Found 10-bit subtractor for signal <offset>.
+    Found 4-bit 8-to-1 multiplexer for signal <pixel>.
+    Found 10-bit up counter for signal <pixel_count>.
+    Found 10-bit comparator greatequal for signal <vdisplay_valid$cmp_ge0000> created at line 272.
+    Found 10-bit comparator lessequal for signal <vdisplay_valid$cmp_le0000> created at line 272.
+    Found 10-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 298.
+    Found 10-bit comparator less for signal <vsync$cmp_lt0000> created at line 298.
+    Found 7-bit register for signal <word_count>.
+    Found 7-bit adder for signal <word_count$addsub0000> created at line 200.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   9 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <wb_vga640x480> synthesized.
+
+
+Synthesizing Unit <char8x12_lookup_table>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/char8x12_lookup_table.vhd".
+WARNING:Xst:653 - Signal <bram_dip<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <bram_di> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <char8x12_lookup_table> synthesized.
+
+
+Synthesizing Unit <videomem_master>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/master.vhd".
+WARNING:Xst:647 - Input <dat_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <leds_o> is never assigned. Tied to value 00000000.
+WARNING:Xst:647 - Input <irq_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <res> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <irqv_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <volume> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txtcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <shift> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <reset1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixelnum<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ctrl> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <bgcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <alt> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 22                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 9                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | first                                          |
+    | Power Up State     | first                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 321: The result of a 7x6-bit multiplication is partially used. Only the 12 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 313: The result of a 4x7-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit tristate buffer for signal <res>.
+    Found 8-bit register for signal <code>.
+    Found 32-bit up counter for signal <count>.
+    Found 16-bit adder for signal <current_addr$add0000> created at line 313.
+    Found 17-bit adder for signal <current_addr$addsub0000> created at line 313.
+    Found 4x7-bit multiplier for signal <current_addr$mult0000> created at line 313.
+    Found 6x7-bit multiplier for signal <current_addr$mult0001> created at line 313.
+    Found 13x4-bit multiplier for signal <current_addr$mult0002> created at line 313.
+    Found 7-bit register for signal <current_char>.
+    Found 7-bit addsub for signal <current_char$share0000> created at line 150.
+    Found 6-bit register for signal <current_line>.
+    Found 6-bit addsub for signal <current_line$share0000> created at line 150.
+    Found 1-bit register for signal <d_down>.
+    Found 1-bit register for signal <extended>.
+    Found 1-bit register for signal <keyup>.
+    Found 1-bit register for signal <l_down>.
+    Found 7x6-bit multiplier for signal <location$mult0001> created at line 321.
+    Found 1-bit register for signal <r_down>.
+    Found 8-bit register for signal <reg_pixels>.
+    Found 4-bit register for signal <scan_line>.
+    Found 4-bit adder for signal <scan_line$addsub0000> created at line 185.
+    Found 1-bit register for signal <u_down>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred   1 Tristate(s).
+Unit <videomem_master> synthesized.
+
+
+Synthesizing Unit <rock_master>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd".
+WARNING:Xst:647 - Input <dat_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <volume> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txtcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <shift> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <rock_count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rockA> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixelnum<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <newrock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <line_count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <lineA> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <fall_speed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ctrl> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <bgcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <alt> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | first                                          |
+    | Power Up State     | first                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" line 184: The result of a 5x5-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" line 253: The result of a 4x5-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <res>.
+    Found 13x13-bit multiplier for signal <$mult0001> created at line 187.
+    Found 13-bit adder for signal <current_addr$add0000> created at line 253.
+    Found 14-bit adder for signal <current_addr$addsub0000> created at line 253.
+    Found 4x5-bit multiplier for signal <current_addr$mult0001> created at line 253.
+    Found 5x5-bit multiplier for signal <current_addr$mult0002> created at line 253.
+    Found 10x4-bit multiplier for signal <current_addr$mult0003> created at line 253.
+    Found 5-bit register for signal <current_char>.
+    Found 5-bit adder for signal <current_char$add0000> created at line 187.
+    Found 5-bit register for signal <current_line>.
+    Found 5-bit adder for signal <current_line$addsub0000> created at line 202.
+    Found 1-bit register for signal <done>.
+    Found 32-bit register for signal <fall_counter>.
+    Found 32-bit adder for signal <fall_counter$addsub0000> created at line 206.
+    Found 5x5-bit multiplier for signal <mult0000$mult0000> created at line 184.
+    Found 8-bit register for signal <reg_pixels>.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0000> created at line 203.
+    Found 32-bit comparator equal for signal <res$cmp_eq0000> created at line 184.
+    Found 4-bit register for signal <scan_line>.
+    Found 4-bit adder for signal <scan_line$addsub0000> created at line 228.
+    Found 13-bit up counter for signal <seed1>.
+    Found 13-bit up counter for signal <seed2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   5 Multiplier(s).
+	inferred   2 Comparator(s).
+Unit <rock_master> synthesized.
+
+
+Synthesizing Unit <videomem>.
+    Related source file is "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd".
+WARNING:Xst:647 - Input <btn<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <vga_reset> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ascii_data_available> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ascii_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <WE_O_M<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <STB_O_M<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <STB_I_S<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <IRQ_O_S<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <IRQ_O_S<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <DAT_O_S3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <DAT_O_S2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <DAT_O_M3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ADR_O_M3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ACK_O_S<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:646 - Signal <ACK_I_M<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <videomem> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 10
+ 10x11-bit multiplier                                  : 1
+ 10x4-bit multiplier                                   : 1
+ 13x13-bit multiplier                                  : 1
+ 13x4-bit multiplier                                   : 1
+ 4x5-bit multiplier                                    : 1
+ 4x7-bit multiplier                                    : 1
+ 5x5-bit multiplier                                    : 2
+ 6x7-bit multiplier                                    : 1
+ 7x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 2
+ 6-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+ 7-bit addsub                                          : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 13-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Registers                                            : 57
+ 1-bit register                                        : 44
+ 31-bit register                                       : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 4
+# Comparators                                          : 15
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 2
+ 31-bit comparator greatequal                          : 1
+ 31-bit comparator less                                : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 8-to-1 multiplexer                              : 1
+# Tristates                                            : 3
+ 1-bit tristate buffer                                 : 2
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <rock_master/state/FSM> on signal <state[1:5]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ first       | 00001
+ init        | 00100
+ getpixels1  | 00010
+ getpixels2  | 01000
+ wait4memack | 10000
+-------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <videomem_master/state/FSM> on signal <state[1:7]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ first       | 0000001
+ initmem     | 0000100
+ wait4irq    | 0000010
+ wait4code   | 0001000
+ getpixels1  | 0010000
+ getpixels2  | 0100000
+ wait4memack | 1000000
+-------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <vga/state/FSM> on signal <state[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ wait4ack  | 00
+ extrawait | 01
+ wait4next | 10
+-----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <wb_ps2_kb/state/FSM> on signal <state[1:11]> with one-hot encoding.
+-----------------------
+ State  | Encoding
+-----------------------
+ start  | 00000000001
+ data0  | 00000000010
+ data1  | 00000000100
+ data2  | 00000001000
+ data3  | 00000010000
+ data4  | 00000100000
+ data5  | 00001000000
+ data6  | 00010000000
+ data7  | 00100000000
+ parity | 01000000000
+ stop   | 10000000000
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <wb_ps2_kb/state2/FSM> on signal <state2[1:3]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ wait4code   | 001
+ wait4irqack | 010
+ wait4zero   | 100
+-------------------------
+WARNING:Xst:1710 - FF/Latch <LGNT3> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clk_divider>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <videomem_master>.
+	Found pipelined multiplier on signal <location>:
+		- 1 pipeline level(s) found in a register on signal <current_char>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <current_line>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <current_addr_mult0001>:
+		- 1 pipeline level(s) found in a register on signal <current_line>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_location_mult0001 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_current_addr_mult0001 by adding 1 register level(s).
+Unit <videomem_master> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 5
+# Multipliers                                          : 10
+ 10x11-bit multiplier                                  : 1
+ 10x4-bit multiplier                                   : 1
+ 13x13-bit multiplier                                  : 1
+ 13x4-bit multiplier                                   : 1
+ 4x5-bit multiplier                                    : 1
+ 4x7-bit multiplier                                    : 1
+ 5x5-bit multiplier                                    : 2
+ 6x7-bit registered multiplier                         : 1
+ 7x6-bit registered multiplier                         : 1
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 2
+ 6-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+ 7-bit addsub                                          : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 13-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Registers                                            : 177
+ Flip-Flops                                            : 177
+# Comparators                                          : 15
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 2
+ 31-bit comparator greatequal                          : 1
+ 31-bit comparator less                                : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <seed1_5> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_6> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_7> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_8> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_9> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_10> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_11> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed1_12> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_5> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_6> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_7> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_8> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_9> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_10> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_11> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2677 - Node <seed2_12> of sequential type is unconnected in block <rock_master>.
+WARNING:Xst:2183 - Unit videomem_master: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): res.
+WARNING:Xst:2183 - Unit wb_vga640x480: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): res.
+
+Optimizing unit <videomem> ...
+
+Optimizing unit <scancode2ascii> ...
+
+Optimizing unit <wb_ps2_kb> ...
+
+Optimizing unit <wb_arbiter> ...
+
+Optimizing unit <wb_intercon> ...
+
+Optimizing unit <wb_vga640x480> ...
+
+Optimizing unit <videomem_master> ...
+
+Optimizing unit <rock_master> ...
+WARNING:Xst:1710 - FF/Latch <wb_intercon/U08/LGNT3> (without init value) has a constant value of 0 in block <videomem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wb_ps2_kb/state2_FSM_FFd3> of sequential type is unconnected in block <videomem>.
+WARNING:Xst:2677 - Node <wb_ps2_kb/state2_FSM_FFd2> of sequential type is unconnected in block <videomem>.
+WARNING:Xst:2677 - Node <wb_ps2_kb/scancode_available> of sequential type is unconnected in block <videomem>.
+WARNING:Xst:2677 - Node <videomem_master/Mmult_location_mult0001> of sequential type is unconnected in block <videomem>.
+WARNING:Xst:2677 - Node <rock_master/Mmult_mult0000_mult0000> of sequential type is unconnected in block <videomem>.
+WARNING:Xst:2677 - Node <rock_master/res> of sequential type is unconnected in block <videomem>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <videomem_master/state_FSM_FFd7> in Unit <videomem> is equivalent to the following FF/Latch, which will be removed : <rock_master/state_FSM_FFd5> 
+Found area constraint ratio of 100 (+ 5) on block videomem, actual ratio is 11.
+FlipFlop videomem_master/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop videomem_master/state_FSM_FFd5 has been replicated 1 time(s)
+FlipFlop videomem_master/state_FSM_FFd7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 262
+ Flip-Flops                                            : 262
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : videomem.ngr
+Top Level Output File Name         : videomem
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 72
+
+Cell Usage :
+# BELS                             : 1597
+#      GND                         : 1
+#      INV                         : 59
+#      LUT1                        : 154
+#      LUT2                        : 189
+#      LUT2_D                      : 7
+#      LUT2_L                      : 2
+#      LUT3                        : 102
+#      LUT3_D                      : 4
+#      LUT3_L                      : 7
+#      LUT4                        : 380
+#      LUT4_D                      : 15
+#      LUT4_L                      : 32
+#      MUXCY                       : 298
+#      MUXF5                       : 87
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 255
+# FlipFlops/Latches                : 262
+#      FDC                         : 99
+#      FDC_1                       : 10
+#      FDCE                        : 47
+#      FDE                         : 79
+#      FDE_1                       : 17
+#      FDP                         : 2
+#      FDP_1                       : 1
+#      FDR                         : 5
+#      FDRE                        : 2
+# RAMS                             : 5
+#      RAMB16_S36_S36              : 1
+#      RAMB16_S9                   : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 67
+#      IBUF                        : 2
+#      IOBUF                       : 16
+#      OBUF                        : 49
+# MULTs                            : 6
+#      MULT18X18SIO                : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      500  out of   4656    10%  
+ Number of Slice Flip Flops:            262  out of   9312     2%  
+ Number of 4 input LUTs:                951  out of   9312    10%  
+ Number of IOs:                          72
+ Number of bonded IOBs:                  69  out of    232    29%  
+ Number of BRAMs:                         5  out of     20    25%  
+ Number of MULT18X18SIOs:                 6  out of     20    30%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 220   |
+ps2c                               | BUFGP                  | 28    |
+vga/clk_divider/clk1               | BUFG                   | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+btn<3>                             | IBUF                   | 159   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.278ns (Maximum Frequency: 75.313MHz)
+   Minimum input arrival time before clock: 5.941ns
+   Maximum output required time after clock: 24.077ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.278ns (frequency: 75.313MHz)
+  Total number of paths / destination ports: 46051 / 377
+-------------------------------------------------------------------------
+Delay:               13.278ns (Levels of Logic = 28)
+  Source:            vga/word_count_0 (FF)
+  Destination:       videomem_master/code_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: vga/word_count_0 to videomem_master/code_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.591   0.761  vga/word_count_0 (vga/word_count_0)
+     LUT4:I3->O            1   0.704   0.000  vga/Madd_adr_o_add0001_lut<0> (vga/Madd_adr_o_add0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  vga/Madd_adr_o_add0001_cy<0> (vga/Madd_adr_o_add0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<1> (vga/Madd_adr_o_add0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<2> (vga/Madd_adr_o_add0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<3> (vga/Madd_adr_o_add0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<4> (vga/Madd_adr_o_add0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<5> (vga/Madd_adr_o_add0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<6> (vga/Madd_adr_o_add0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<7> (vga/Madd_adr_o_add0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<8> (vga/Madd_adr_o_add0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<9> (vga/Madd_adr_o_add0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<10> (vga/Madd_adr_o_add0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<11> (vga/Madd_adr_o_add0001_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<12> (vga/Madd_adr_o_add0001_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<13> (vga/Madd_adr_o_add0001_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<14> (vga/Madd_adr_o_add0001_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<15> (vga/Madd_adr_o_add0001_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<16> (vga/Madd_adr_o_add0001_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<17> (vga/Madd_adr_o_add0001_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0001_cy<18> (vga/Madd_adr_o_add0001_cy<18>)
+     MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_add0001_cy<19> (vga/Madd_adr_o_add0001_cy<19>)
+     XORCY:CI->O          16   0.804   1.038  vga/Madd_adr_o_add0001_xor<20> (ADR_O_M1<22>)
+     LUT4:I3->O            6   0.704   0.844  wb_intercon/Mmux_DAT_RD561 (DRD<5>)
+     LUT3_D:I0->O          6   0.704   0.673  videomem_master/state_cmp_eq000511 (videomem_master/state_and0000)
+     LUT4:I3->O            3   0.704   0.610  videomem_master/r_down_mux0001 (videomem_master/r_down_mux0001)
+     LUT3:I1->O            1   0.704   0.424  videomem_master/code_and000131 (videomem_master/code_and000131)
+     LUT4_D:I3->O          7   0.704   0.712  videomem_master/code_and000136 (videomem_master/code_and000136)
+     LUT4:I3->O            1   0.704   0.000  videomem_master/code_mux0001<6>1 (videomem_master/code_mux0001<6>)
+     FDE:D                     0.308          videomem_master/code_1
+    ----------------------------------------
+    Total                     13.278ns (8.216ns logic, 5.062ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ps2c'
+  Clock period: 5.311ns (frequency: 188.288MHz)
+  Total number of paths / destination ports: 70 / 36
+-------------------------------------------------------------------------
+Delay:               5.311ns (Levels of Logic = 4)
+  Source:            wb_ps2_kb/state_FSM_FFd3 (FF)
+  Destination:       wb_ps2_kb/p (FF)
+  Source Clock:      ps2c falling
+  Destination Clock: ps2c falling
+
+  Data Path: wb_ps2_kb/state_FSM_FFd3 to wb_ps2_kb/p
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            4   0.591   0.762  wb_ps2_kb/state_FSM_FFd3 (wb_ps2_kb/state_FSM_FFd3)
+     LUT4:I0->O            2   0.704   0.622  wb_ps2_kb/p_mux000012 (wb_ps2_kb/p_mux000012)
+     LUT4:I0->O            1   0.704   0.000  wb_ps2_kb/p_mux0000352 (wb_ps2_kb/p_mux0000352)
+     MUXF5:I0->O           1   0.321   0.595  wb_ps2_kb/p_mux000035_f5 (wb_ps2_kb/p_mux000035)
+     LUT2:I0->O            1   0.704   0.000  wb_ps2_kb/p_mux0000115 (wb_ps2_kb/p_mux0000)
+     FDE_1:D                   0.308          wb_ps2_kb/p
+    ----------------------------------------
+    Total                      5.311ns (3.332ns logic, 1.979ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vga/clk_divider/clk1'
+  Clock period: 6.511ns (frequency: 153.586MHz)
+  Total number of paths / destination ports: 410 / 30
+-------------------------------------------------------------------------
+Delay:               6.511ns (Levels of Logic = 4)
+  Source:            vga/line_count_6 (FF)
+  Destination:       vga/line_count_9 (FF)
+  Source Clock:      vga/clk_divider/clk1 rising
+  Destination Clock: vga/clk_divider/clk1 rising
+
+  Data Path: vga/line_count_6 to vga/line_count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.762  vga/line_count_6 (vga/line_count_6)
+     LUT3:I0->O            2   0.704   0.622  vga/cyc_o_cmp_lt0000221 (vga/N17)
+     LUT3:I0->O            2   0.704   0.451  vga/line_count_cmp_eq000011 (vga/N12)
+     LUT4:I3->O           10   0.704   0.961  vga/line_count_cmp_eq00003 (vga/line_count_cmp_eq0000)
+     LUT2:I1->O            1   0.704   0.000  vga/Mcount_line_count_eqn_91 (vga/Mcount_line_count_eqn_9)
+     FDCE:D                    0.308          vga/line_count_9
+    ----------------------------------------
+    Total                      6.511ns (3.715ns logic, 2.796ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 123 / 123
+-------------------------------------------------------------------------
+Offset:              5.085ns (Levels of Logic = 2)
+  Source:            btn<3> (PAD)
+  Destination:       videomem_master/count_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<3> to videomem_master/count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           185   1.218   1.346  btn_3_IBUF (btn_3_IBUF)
+     LUT4:I2->O           32   0.704   1.262  videomem_master/count_and00001 (videomem_master/count_and0000)
+     FDE:CE                    0.555          videomem_master/count_0
+    ----------------------------------------
+    Total                      5.085ns (2.477ns logic, 2.608ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ps2c'
+  Total number of paths / destination ports: 40 / 29
+-------------------------------------------------------------------------
+Offset:              5.941ns (Levels of Logic = 4)
+  Source:            ps2d (PAD)
+  Destination:       wb_ps2_kb/p (FF)
+  Destination Clock: ps2c falling
+
+  Data Path: ps2d to wb_ps2_kb/p
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  ps2d_IBUF (ps2d_IBUF)
+     LUT2:I0->O            1   0.704   0.595  wb_ps2_kb/p_mux000048 (wb_ps2_kb/p_mux000048)
+     LUT4:I0->O            1   0.704   0.499  wb_ps2_kb/p_mux0000102 (wb_ps2_kb/p_mux0000102)
+     LUT2:I1->O            1   0.704   0.000  wb_ps2_kb/p_mux0000115 (wb_ps2_kb/p_mux0000)
+     FDE_1:D                   0.308          wb_ps2_kb/p
+    ----------------------------------------
+    Total                      5.941ns (3.638ns logic, 2.303ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/clk_divider/clk1'
+  Total number of paths / destination ports: 684141 / 30
+-------------------------------------------------------------------------
+Offset:              24.077ns (Levels of Logic = 34)
+  Source:            vga/line_count_0 (FF)
+  Destination:       MemWR (PAD)
+  Source Clock:      vga/clk_divider/clk1 rising
+
+  Data Path: vga/line_count_0 to MemWR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.706  vga/line_count_0 (vga/line_count_0)
+     LUT1:I0->O            1   0.704   0.000  vga/Msub_adr_o_addsub0001_cy<0>_rt (vga/Msub_adr_o_addsub0001_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  vga/Msub_adr_o_addsub0001_cy<0> (vga/Msub_adr_o_addsub0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<1> (vga/Msub_adr_o_addsub0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<2> (vga/Msub_adr_o_addsub0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<3> (vga/Msub_adr_o_addsub0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<4> (vga/Msub_adr_o_addsub0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<5> (vga/Msub_adr_o_addsub0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<6> (vga/Msub_adr_o_addsub0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<7> (vga/Msub_adr_o_addsub0001_cy<7>)
+     MUXCY:CI->O           0   0.059   0.000  vga/Msub_adr_o_addsub0001_cy<8> (vga/Msub_adr_o_addsub0001_cy<8>)
+     XORCY:CI->O           9   0.804   0.820  vga/Msub_adr_o_addsub0001_xor<9> (vga/adr_o_addsub0001<9>)
+     MULT18X18SIO:A9->P10    2   4.602   0.447  vga/Mmult_adr_o_mult0001 (vga/adr_o_mult0001<10>)
+     INV:I->O              1   0.704   0.000  vga/Madd_adr_o_not0000<10>1_INV_0 (vga/Madd_adr_o_not0000<10>)
+     MUXCY:S->O            1   0.464   0.000  vga/Madd_adr_o_add0000_cy<10> (vga/Madd_adr_o_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<11> (vga/Madd_adr_o_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<12> (vga/Madd_adr_o_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<13> (vga/Madd_adr_o_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<14> (vga/Madd_adr_o_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<15> (vga/Madd_adr_o_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<16> (vga/Madd_adr_o_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  vga/Madd_adr_o_add0000_cy<17> (vga/Madd_adr_o_add0000_cy<17>)
+     MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_add0000_cy<18> (vga/Madd_adr_o_add0000_cy<18>)
+     XORCY:CI->O           1   0.804   0.420  vga/Madd_adr_o_add0000_xor<19> (vga/adr_o_add0000<19>)
+     INV:I->O              1   0.704   0.000  vga/adr_o_not0001<16>1_INV_0 (vga/adr_o_not0001<16>)
+     MUXCY:S->O            1   0.464   0.000  vga/Madd_adr_o_addsub0000_cy<16> (vga/Madd_adr_o_addsub0000_cy<16>)
+     MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_addsub0000_cy<17> (vga/Madd_adr_o_addsub0000_cy<17>)
+     XORCY:CI->O           3   0.804   0.610  vga/Madd_adr_o_addsub0000_xor<18> (vga/adr_o_addsub0000<18>)
+     LUT2:I1->O            1   0.704   0.000  vga/adr_o_mux0000<18>12 (vga/adr_o_mux0000<18>11)
+     MUXCY:S->O            1   0.464   0.000  vga/Madd_adr_o_add0001_cy<18> (vga/Madd_adr_o_add0001_cy<18>)
+     MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_add0001_cy<19> (vga/Madd_adr_o_add0001_cy<19>)
+     XORCY:CI->O          16   0.804   1.069  vga/Madd_adr_o_add0001_xor<20> (ADR_O_M1<22>)
+     LUT4:I2->O            4   0.704   0.762  wb_intercon/STB_S_0_and00001 (STB_I_S<0>)
+     LUT2:I0->O            1   0.704   0.420  sram16ctl/we1 (MemWR_OBUF)
+     OBUF:I->O                 3.272          MemWR_OBUF (MemWR)
+    ----------------------------------------
+    Total                     24.077ns (18.823ns logic, 5.254ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16394 / 45
+-------------------------------------------------------------------------
+Offset:              20.328ns (Levels of Logic = 11)
+  Source:            videomem_master/Mmult_current_addr_mult0001 (MULT)
+  Destination:       MemAdr<17> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: videomem_master/Mmult_current_addr_mult0001 to MemAdr<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     MULT18X18SIO:CLK->P12    1   4.794   0.420  videomem_master/Mmult_current_addr_mult0001 (videomem_master/current_addr_mult0001<12>)
+     MULT18X18SIO:A12->P12    1   4.705   0.595  videomem_master/Mmult_current_addr_mult0002 (videomem_master/current_addr_mult0002<12>)
+     LUT1:I0->O            1   0.704   0.000  videomem_master/Madd_current_addr_addsub0000_cy<12>_rt (videomem_master/Madd_current_addr_addsub0000_cy<12>_rt)
+     MUXCY:S->O            1   0.464   0.000  videomem_master/Madd_current_addr_addsub0000_cy<12> (videomem_master/Madd_current_addr_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  videomem_master/Madd_current_addr_addsub0000_cy<13> (videomem_master/Madd_current_addr_addsub0000_cy<13>)
+     XORCY:CI->O           1   0.804   0.595  videomem_master/Madd_current_addr_addsub0000_xor<14> (videomem_master/current_addr_addsub0000<14>)
+     LUT1:I0->O            1   0.704   0.000  videomem_master/Madd_current_addr_add0000_cy<14>_rt (videomem_master/Madd_current_addr_add0000_cy<14>_rt)
+     MUXCY:S->O            0   0.464   0.000  videomem_master/Madd_current_addr_add0000_cy<14> (videomem_master/Madd_current_addr_add0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.499  videomem_master/Madd_current_addr_add0000_xor<15> (videomem_master/current_addr<17>)
+     LUT4:I1->O            1   0.704   0.000  wb_intercon/Mmux_ADR182 (wb_intercon/Mmux_ADR181)
+     MUXF5:I0->O           1   0.321   0.420  wb_intercon/Mmux_ADR18_f5 (ADR_I_S<17>)
+     OBUF:I->O                 3.272          MemAdr_17_OBUF (MemAdr<17>)
+    ----------------------------------------
+    Total                     20.328ns (17.799ns logic, 2.529ns route)
+                                       (87.6% logic, 12.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.52 secs
+ 
+--> 
+
+Total memory usage is 313376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+
