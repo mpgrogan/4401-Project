@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Aaron\Documents\ise\demo8\videomem.ncd
+OUTFILE=C:\Users\Aaron\Documents\ise\demo8\videomem.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Aaron\Documents\ise\demo8
+LICENSE=WebPack
+USER_INFO=174158745_175793607_210590534_760

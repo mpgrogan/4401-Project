@@ -1,0 +1,223 @@
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -i -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+xst -intstyle ise -ifn "C:/Users/Aaron/Documents/ise/demo8/videomem.xst" -ofn "C:/Users/Aaron/Documents/ise/demo8/videomem.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/Aaron/Documents/ise/Nexys2_500General.ucf -p xc3s500e-fg320-4 videomem.ngc videomem.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o videomem_map.ncd videomem.ngd videomem.pcf 
+par -w -intstyle ise -ol high -t 1 videomem_map.ncd videomem.ncd videomem.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml videomem.twx videomem.ncd -o videomem.twr videomem.pcf 
+bitgen -intstyle ise -f videomem.ut videomem.ncd 
