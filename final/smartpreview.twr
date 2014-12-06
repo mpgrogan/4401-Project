@@ -1,0 +1,817 @@
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net clk_BUFGP
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 181891 paths analyzed, 7854 endpoints analyzed, 165 failing endpoints
+ 165 timing errors detected. (165 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  12.309ns.
+--------------------------------------------------------------------------------
+Slack:                  -1.641 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_0 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.299 (Levels of Logic = 17)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_0 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y30.YQ      Tcko                  0.587   vga/word_count<0>
+                                                       vga/word_count_0
+    SLICE_X12Y31.F2      net (fanout=8)        0.763   vga/word_count<0>
+    SLICE_X12Y31.COUT    Topcyf                1.162   ADR_O_M1<2>
+                                                       vga/Madd_adr_o_add0001_lut<0>
+                                                       vga/Madd_adr_o_add0001_cy<0>
+                                                       vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.COUT    Tbyp                  0.130   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.619 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_4 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.274 (Levels of Logic = 15)
+  Clock Path Skew:      -0.013ns (0.123 - 0.136)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_4 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y32.XQ      Tcko                  0.591   vga/word_count<4>
+                                                       vga/word_count_4
+    SLICE_X12Y33.F2      net (fanout=7)        0.994   vga/word_count<4>
+    SLICE_X12Y33.COUT    Topcyf                1.162   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_lut<4>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.454 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_2 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.109 (Levels of Logic = 16)
+  Clock Path Skew:      -0.013ns (0.123 - 0.136)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_2 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y33.XQ      Tcko                  0.591   vga/word_count<2>
+                                                       vga/word_count_2
+    SLICE_X12Y32.F1      net (fanout=5)        0.699   vga/word_count<2>
+    SLICE_X12Y32.COUT    Topcyf                1.162   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_lut<2>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.453 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_1 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.111 (Levels of Logic = 17)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_1 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y31.XQ      Tcko                  0.591   vga/word_count<1>
+                                                       vga/word_count_1
+    SLICE_X12Y31.G1      net (fanout=7)        0.602   vga/word_count<1>
+    SLICE_X12Y31.COUT    Topcyg                1.131   ADR_O_M1<2>
+                                                       vga/Madd_adr_o_add0001_lut<1>
+                                                       vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.COUT    Tbyp                  0.130   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.432 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_0 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.090 (Levels of Logic = 17)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_0 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y30.YQ      Tcko                  0.587   vga/word_count<0>
+                                                       vga/word_count_0
+    SLICE_X12Y31.F2      net (fanout=8)        0.763   vga/word_count<0>
+    SLICE_X12Y31.COUT    Topcyf                0.953   ADR_O_M1<2>
+                                                       vga/Madd_adr_o_add0001_cy<0>
+                                                       vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.COUT    Tbyp                  0.130   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.410 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_4 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      12.065 (Levels of Logic = 15)
+  Clock Path Skew:      -0.013ns (0.123 - 0.136)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_4 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y32.XQ      Tcko                  0.591   vga/word_count<4>
+                                                       vga/word_count_4
+    SLICE_X12Y33.F2      net (fanout=7)        0.994   vga/word_count<4>
+    SLICE_X12Y33.COUT    Topcyf                0.953   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.340 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_3 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      11.998 (Levels of Logic = 16)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_3 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y30.XQ      Tcko                  0.592   vga/word_count<3>
+                                                       vga/word_count_3
+    SLICE_X12Y32.G1      net (fanout=4)        0.618   vga/word_count<3>
+    SLICE_X12Y32.COUT    Topcyg                1.131   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_lut<3>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X13Y37.F2      net (fanout=14)       0.438   ADR_O_M1<22>
+    SLICE_X13Y37.X       Tilo                  0.704   DRD<2>
+                                                       wb_intercon/Mmux_DAT_RD461
+    SLICE_X14Y32.F1      net (fanout=8)        1.041   DRD<2>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.325 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_0 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      11.983 (Levels of Logic = 17)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_0 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y30.YQ      Tcko                  0.587   vga/word_count<0>
+                                                       vga/word_count_0
+    SLICE_X12Y31.F2      net (fanout=8)        0.763   vga/word_count<0>
+    SLICE_X12Y31.COUT    Topcyf                1.162   ADR_O_M1<2>
+                                                       vga/Madd_adr_o_add0001_lut<0>
+                                                       vga/Madd_adr_o_add0001_cy<0>
+                                                       vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.COUT    Tbyp                  0.130   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X14Y32.G2      net (fanout=14)       1.000   ADR_O_M1<22>
+    SLICE_X14Y32.Y       Tilo                  0.759   videomem_master/N39
+                                                       wb_intercon/Mmux_DAT_RD541
+    SLICE_X14Y32.F4      net (fanout=11)       0.108   DRD<4>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.303 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_4 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      11.958 (Levels of Logic = 15)
+  Clock Path Skew:      -0.013ns (0.123 - 0.136)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_4 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y32.XQ      Tcko                  0.591   vga/word_count<4>
+                                                       vga/word_count_4
+    SLICE_X12Y33.F2      net (fanout=7)        0.994   vga/word_count<4>
+    SLICE_X12Y33.COUT    Topcyf                1.162   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_lut<4>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X14Y32.G2      net (fanout=14)       1.000   ADR_O_M1<22>
+    SLICE_X14Y32.Y       Tilo                  0.759   videomem_master/N39
+                                                       wb_intercon/Mmux_DAT_RD541
+    SLICE_X14Y32.F4      net (fanout=11)       0.108   DRD<4>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -1.261 (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga/word_count_0 (FF)
+  Destination:          videomem_master/state_FSM_FFd10 (FF)
+  Requirement:          10.668
+  Data Path Delay:      11.919 (Levels of Logic = 17)
+  Clock Path Skew:      -0.010ns (0.123 - 0.133)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.668ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: vga/word_count_0 to videomem_master/state_FSM_FFd10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y30.YQ      Tcko                  0.587   vga/word_count<0>
+                                                       vga/word_count_0
+    SLICE_X12Y31.F2      net (fanout=8)        0.763   vga/word_count<0>
+    SLICE_X12Y31.COUT    Topcyf                1.162   ADR_O_M1<2>
+                                                       vga/Madd_adr_o_add0001_lut<0>
+                                                       vga/Madd_adr_o_add0001_cy<0>
+                                                       vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<1>
+    SLICE_X12Y32.COUT    Tbyp                  0.130   ADR_O_M1<4>
+                                                       vga/Madd_adr_o_add0001_cy<2>
+                                                       vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<3>
+    SLICE_X12Y33.COUT    Tbyp                  0.130   ADR_O_M1<6>
+                                                       vga/Madd_adr_o_add0001_cy<4>
+                                                       vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<5>
+    SLICE_X12Y34.COUT    Tbyp                  0.130   ADR_O_M1<8>
+                                                       vga/Madd_adr_o_add0001_cy<6>
+                                                       vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<7>
+    SLICE_X12Y35.COUT    Tbyp                  0.130   ADR_O_M1<10>
+                                                       vga/Madd_adr_o_add0001_cy<8>
+                                                       vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<9>
+    SLICE_X12Y36.COUT    Tbyp                  0.130   ADR_O_M1<12>
+                                                       vga/Madd_adr_o_add0001_cy<10>
+                                                       vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<11>
+    SLICE_X12Y37.COUT    Tbyp                  0.130   ADR_O_M1<14>
+                                                       vga/Madd_adr_o_add0001_cy<12>
+                                                       vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<13>
+    SLICE_X12Y38.COUT    Tbyp                  0.130   ADR_O_M1<16>
+                                                       vga/Madd_adr_o_add0001_cy<14>
+                                                       vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<15>
+    SLICE_X12Y39.COUT    Tbyp                  0.130   ADR_O_M1<18>
+                                                       vga/Madd_adr_o_add0001_cy<16>
+                                                       vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<17>
+    SLICE_X12Y40.COUT    Tbyp                  0.130   ADR_O_M1<20>
+                                                       vga/Madd_adr_o_add0001_cy<18>
+                                                       vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.CIN     net (fanout=1)        0.000   vga/Madd_adr_o_add0001_cy<19>
+    SLICE_X12Y41.X       Tcinx                 0.497   ADR_O_M1<22>
+                                                       vga/Madd_adr_o_add0001_xor<20>
+    SLICE_X14Y33.F4      net (fanout=14)       0.908   ADR_O_M1<22>
+    SLICE_X14Y33.X       Tilo                  0.759   DRD<1>
+                                                       wb_intercon/Mmux_DAT_RD241
+    SLICE_X14Y32.F2      net (fanout=7)        0.136   DRD<1>
+    SLICE_X14Y32.X       Tilo                  0.759   videomem_master/N39
+                                                       videomem_master/state_cmp_eq000511
+    SLICE_X13Y43.F4      net (fanout=6)        0.880   videomem_master/N39
+    SLICE_X13Y43.X       Tilo                  0.704   N824
+                                                       videomem_master/state_FSM_FFd10-In35_SW0
+    SLICE_X14Y30.G2      net (fanout=1)        0.751   N824
+    SLICE_X14Y30.Y       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In35
+    SLICE_X14Y30.F4      net (fanout=1)        0.023   videomem_master/state_FSM_FFd10-In35/O
+    SLICE_X14Y30.X       Tilo                  0.759   videomem_master/state_FSM_FFd10-In77
+                                                       videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.G4      net (fanout=1)        0.410   videomem_master/state_FSM_FFd10-In77
+    SLICE_X16Y32.CLK     Tgck                  0.892   videomem_master/state_FSM_FFd9
+                                                       videomem_master/state_FSM_FFd10-In109
+                                                       videomem_master/state_FSM_FFd10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net ps2c_BUFGP
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 70 paths analyzed, 43 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.752ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net vga/clk_divider/clk
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 410 paths analyzed, 50 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.822ns.
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+

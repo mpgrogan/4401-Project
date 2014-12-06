@@ -89,10 +89,10 @@ architecture Behavioral of videomem is
 	constant buffer_base : std_logic_vector(31 downto 0) := (others => '0');
 	signal rst : std_logic;
 	signal location : std_logic_vector(31 downto 0);
-	signal res : std_logic;
+	signal res : std_logic := '0';
 begin
-
-  	rst <= btn(3);
+	
+  	rst <= btn(3);-- or res;
 
 	wb_intercon : entity work.wb_intercon
 		port map ( clk => clk, rst => rst,
@@ -143,10 +143,9 @@ begin
 					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s1,
 					  ack_o => ack_o_s(1), stb_i => stb_i_s(1), we_i => we, irq_o => irq_o_s(1) );
 
-
 	cyc_o_m(3) <= '0';
 	--cyc_o_m(2) <= '0';
 
- 	vga_reset <= rst;
+ 	vga_reset <= rst ;
 
 end Behavioral;

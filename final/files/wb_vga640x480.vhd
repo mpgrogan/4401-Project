@@ -132,7 +132,7 @@ begin
 			variable pixels1 : std_logic_vector(BITS_PER_PIXEL*PIXELS_PER_WORD-1 downto 0);
 		begin
 			if ( rst_i = '1' ) then --or res = '1' ) then
-				res <= '0';
+				--res <= '0';
 				pixel_count <= 0;
 				state <= EXTRAWAIT;
 				word_count <= 0;

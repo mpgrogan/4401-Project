@@ -53,7 +53,7 @@ architecture Behavioral of videomem_master is
 	signal req : std_logic;
 
 	signal current_addr : std_logic_vector(31 downto 0);
-	type state_type is (FIRST,INITMEM, WAIT4IRQ, WAIT4CODE, GETPIXELS1, GETPIXELS2, WAIT4MEMACK);
+	type state_type is (FIRST,INITMEM, WAIT4IRQ, WAIT4CODE, GETPIXELS1, GETPIXELS2, WAIT4MEMACK,SHIP,LASER,CLOCK,CLOCK2);
 	signal state : state_type;
 
 	constant CHARS_PER_LINE : integer := 80;
@@ -72,9 +72,13 @@ architecture Behavioral of videomem_master is
 	signal current_line : integer range 0 to LINES_PER_PAGE-1;
 	signal scan_line : integer range 0 to CHAR_HEIGHT;
 	signal pixelnum : integer range 0 to CHAR_WIDTH-1;
-	signal count : integer ;
-	signal reset1: std_logic;
-
+	signal delete_count,laser_counter,laser_speed,laser_line,laser_char,ship_char,ship_line,ship_speed,move_counter : integer ;
+	signal reset1,delete_laser: std_logic;
+	signal count,count2 : integer RANGE 0 to 9;
+	signal ans: integer RANGE 0 to 2;
+	signal timer : integer RANGE 0 to 500000;
+	signal alternate : integer RANGE 0 to 3;
+	signal number : std_logic_vector(7 downto 0);
 	signal buffer_base : std_logic_vector(31 downto 0);
 begin
 
@@ -127,33 +131,39 @@ begin
 	
 	process( clk_i, rst_i ) -- process that controls the ship
 		variable extended, keyup : std_logic;
-		variable l_down, r_down, u_down, d_down,movement : std_logic;
+		variable l_down, r_down, u_down, d_down,movement,shoot : std_logic;
 		variable next_state : state_type;
 		variable scancode : std_logic_vector(7 downto 0);
 	begin
 		if ( rst_i = '1') then
 			reset1 <= '0';
 			--res <= '0';
-			--current_char <= 30;
-			--current_line <= 40;
+			current_char <= 0;
+			current_line <= 0;
 			scan_line <= 0;
+			shift <= '1';
 			reg_pixels <= X"00";
 			state <= FIRST;
-		
+			
+			laser_counter <= 0;
+			laser_speed <= 18000;
 			r_down := '0';
 			u_down := '0';
 			l_down := '0';
 			d_down := '0';
+			shoot := '0';
 			movement := '1';
 			keyup := '0';
 			extended := '0';
+			ship_char <= 40;
+			ship_line <= LINES_PER_PAGE - 2;
 		elsif ( clk_i'event and clk_i='1' ) then
 			case state is
 			
 			when FIRST =>
 			reset1 <= '0';
-			--current_char <= 30;
-			--current_line <= 40;
+			current_char <= 0;
+			current_line <= 0;
 			scan_line <= 0;
 			reg_pixels <= X"00";
 			state <= INITMEM;
@@ -167,14 +177,15 @@ begin
 			extended := '0';
 				
 			when INITMEM =>
+			reg_pixels <= X"00";
 				if ( ack_i = '1' ) then
 					if ( scan_line = CHAR_HEIGHT-1 ) then
 						scan_line <= 0;
 						if ( current_char = CHARS_PER_LINE-1 ) then
 							current_char <= 0;
 							if ( current_line = LINES_PER_PAGE-1 ) then
-								current_line <= 25;
-								current_char <= 30;
+							--	current_line <= 25;
+							--	current_char <= 30;
 								state <= WAIT4IRQ;
 							else
 								current_line <= current_line + 1;
@@ -184,15 +195,16 @@ begin
 						end if;
 					else
 						scan_line <= scan_line + 1;
+						
 						state <= INITMEM;
 					end if;
 				end if;
 
 			when WAIT4IRQ =>
-				if reset1 = '1' then reset1 <= '0'; state <= FIRST;end if;
-				if ( irq_i = '1' or movement = '1') then
+				--if reset1 = '1' then reset1 <= '0'; state <= FIRST;end if;
+				
 				  state <= WAIT4CODE;
-				end if;
+				
 
 			when WAIT4CODE =>
 				if ( ack_i ='1' ) then
@@ -205,6 +217,14 @@ begin
 						extended := '1';
 					else
 						if ( keyup = '1' ) then
+							if (scancode = X"1C") then
+								if shoot = '1' then 
+									delete_laser <= '1';
+								else shoot := '1'; end if;
+								laser_char <= ship_char;
+								laser_line <= ship_line -1;
+								next_state := GETPIXELS1;
+							end if;
 						elsif ( extended = '1' ) then
 							if ( scancode = X"75" ) then 
 								u_down := '1';
@@ -237,46 +257,164 @@ begin
 
 			when GETPIXELS1 =>
 				-- wait for pixels to be ready from lookup table
+				if alternate = 0 then
+					shift <= '1';
+					code <= X"22"; -- ship
+				elsif (shoot = '1' and alternate = 1) then
+					shift <= '1';
+					code <= X"25"; --laser
+				elsif (alternate = 2) then
+					shift <= '0';
+					timer <= timer + 1;
+					
+					if timer = 0 then
+						count <= count + 1;	
+						if count = 9 then count2 <= count2 + 1; end if;
+					end if;
+					
+					case count is
+						when 0 => 
+							code <= X"45"; 
+						when 1 => 
+							code <= X"16"; 
+						when 2 => 
+							code <= X"1E"; 
+						when 3 => 
+							code <= X"26"; 
+						when 4 => 
+							code <= X"25"; 
+						when 5 => 
+							code <= X"2E"; 
+						when 6 => 
+							code <= X"36"; 
+						when 7 => 
+							code <= X"3D"; 
+						when 8 => 
+							code <= X"3E"; 
+						when 9 => 
+							code <= X"46"; 
+						when others =>  code <= X"45";	
+					end case;
+				else
+					case count2 is
+						when 0 => 
+							code <= X"45"; 
+						when 1 => 
+							code <= X"16"; 
+						when 2 => 
+							code <= X"1E"; 
+						when 3 => 
+							code <= X"26"; 
+						when 4 => 
+							code <= X"25"; 
+						when 5 => 
+							code <= X"2E"; 
+						when 6 => 
+							code <= X"36"; 
+						when 7 => 
+							code <= X"3D"; 
+						when 8 => 
+							code <= X"3E"; 
+						when 9 => 
+							code <= X"46"; 
+						when others =>  code <= X"45";	
+					end case;
+				end if;
+				
+				
+				
 				state <= GETPIXELS2;
 
 			when GETPIXELS2 =>
 				pixelnum <= 0;
-				-- if the character is a back space, backup a character
-				if ( l_down = '1' or r_down = '1' or u_down = '1' or d_down = '1'  ) then
-					reg_pixels <= X"00"; -- clear the character
-					state <= WAIT4MEMACK;
+				if alternate = 0 then
+					state <= SHIP;
+				elsif (shoot = '1' and alternate = 1) then
+					state <= LASER;
+				elsif (alternate = 2) then
+					state <= CLOCK;
 				else
-
-					reg_pixels <= pixels;
-					state <= WAIT4MEMACK;
+					state <= CLOCK2;
 				end if;
-
+				
+			when LASER =>
+				if delete_laser = '1' then
+					current_line <= laser_line;
+					current_char <= laser_char;
+					reg_pixels <= X"00";
+					if delete_count = 500 then
+						delete_laser <= '0';
+					else
+					delete_count <= delete_count + 1;
+					end if;
+					
+				elsif shoot = '1' then
+					current_line <= laser_line;
+					current_char <= laser_char;
+					if laser_counter = laser_speed then 
+						laser_counter <= 0;
+						laser_line <= laser_line - 1;
+						if laser_line = 2  then shoot := '0'; end if;
+					elsif laser_counter > laser_speed - 900 then
+						reg_pixels <= X"00";
+						laser_counter <= laser_counter + 1;
+					else
+					laser_counter <= laser_counter + 1;
+					reg_pixels <= pixels;
+					end if;
+				end if;
+				state <= WAIT4MEMACK;
+				
+			when SHIP =>
+				
+				current_char <= ship_char;
+				current_line <= ship_line;
+						--if count = 100 then 
+						if (l_down = '1' or r_down = '1' or d_down = '1' or u_down = '1') then
+							reg_pixels <= X"00";
+							move_counter <= move_counter + 1;
+							if move_counter = 500 then
+								move_counter <= 0;
+								if (l_down = '1') then
+									l_down := '0';
+									if (ship_char /= 0 ) then ship_char <= ship_char - 1; end if;
+								elsif (r_down = '1') then
+									r_down := '0'; 
+									if (ship_char /= CHARS_PER_LINE ) then ship_char <= ship_char + 1; end if;
+								elsif (u_down = '1') then
+									u_down := '0';
+									if (ship_line /= 0) then ship_line <= ship_line - 1; end if;
+								elsif (d_down = '1') then
+									d_down := '0';
+									if (current_line /= LINES_PER_PAGE) then ship_line <= ship_line + 1; end if;
+								end if;
+							end if;
+						else
+							reg_pixels <= pixels;
+						end if;
+						--else count <= count +1; end if;
+				state <= WAIT4MEMACK;
+				
+			when CLOCK =>
+				current_line <= 1;
+				current_char <= CHARS_PER_LINE - 1;
+				reg_pixels <= pixels;
+				state <= WAIT4MEMACK;
+	
+			when CLOCK2 =>
+				current_line <= 1;
+				current_char <= CHARS_PER_LINE - 2;
+				reg_pixels <= pixels;
+				state <= WAIT4MEMACK;
 			when WAIT4MEMACK =>
 			
 			--location <= current_line*current_char;
 				if ( ack_i = '1' ) then
 					if ( scan_line = CHAR_HEIGHT-1 ) then
+					alternate <= alternate + 1;
 						state <= WAIT4IRQ;
 						scan_line <= 0;
-						if count = 100 then 
-							if (l_down = '1') then
-								l_down := '0';
-								movement := '1';
-								if (current_char /= 0 ) then current_char <= current_char - 1; end if;
-							elsif (r_down = '1') then
-								r_down := '0'; 
-								movement := '1';
-								if (current_char /= CHARS_PER_LINE ) then current_char <= current_char + 1; end if;
-							elsif (u_down = '1') then
-								u_down := '0';
-								movement := '1';
-								if (current_line /= 0) then current_line <= current_line - 1; end if;
-							elsif (d_down = '1') then
-								d_down := '0';
-								movement := '1';
-								if (current_line /= LINES_PER_PAGE) then current_line <= current_line + 1; end if;
-							end if;
-						else count <= count +1; end if;
+						
 					else
 						-- check if we have written all the pixels for this scanline character
 						if (pixelnum < CHAR_WIDTH-PIXELS_PER_WORD) then
@@ -318,8 +456,8 @@ begin
 	stb_o <= req;
 	cyc_o <= req;
 
-	reset1 <= '1' when res = '1';
-	location <= conv_std_logic_vector(current_line*current_char,32);
+	--reset1 <= '1' when res = '1';
+	--location <= conv_std_logic_vector(current_line*current_char,32);
 		
 end Behavioral;
 --
