@@ -88,12 +88,15 @@ architecture Behavioral of videomem is
 
 	constant buffer_base : std_logic_vector(31 downto 0) := (others => '0');
 	signal rst : std_logic;
-	signal location : std_logic_vector(31 downto 0);
+	signal xlocation,ylocation : std_logic_vector(7 downto 0);
 	signal res : std_logic := '0';
+	signal st,test : std_logic;
+	
 begin
 	
   	rst <= btn(3);-- or res;
-
+	st <= btn(0);
+	test <= btn(2);
 	wb_intercon : entity work.wb_intercon
 		port map ( clk => clk, rst => rst,
      		   	  ack_i_m => ACK_I_M, ack_o_s => ack_o_s,
@@ -112,7 +115,8 @@ begin
 		port map ( clk_i => clk, rst_i => rst, 
 					  adr_o => adr_o_m0, dat_i => drd, dat_o => dat_o_m0,
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
-					  we_o => we_o_m(0), irq_i => irq_i_m, irqv_i => irqv_i_m, leds_o => leds_o, location => location, res => res );
+					  we_o => we_o_m(0), irq_i => irq_i_m, irqv_i => irqv_i_m, leds_o => leds_o, xlocation => xlocation, 
+					  ylocation => ylocation, res => res );
 
 	vga : entity work.wb_vga640x480 
 		port map ( clk_i => clk, rst_i => rst, 
@@ -125,7 +129,7 @@ begin
 		port map ( clk_i => clk, rst_i => rst, 
 					  adr_o => adr_o_m2, dat_i => drd, dat_o => dat_o_m2,
 					  ack_i => ack_i_m(2), cyc_o => cyc_o_m(2), stb_o => stb_o_m(2), 
-					  we_o => we_o_m(2), location => location, res => res);
+					  we_o => we_o_m(2), xlocation => xlocation, ylocation => ylocation ,res => res, st => st,test=>test );
 
 
 	sram16ctl : entity work.sram16ctl
@@ -143,7 +147,7 @@ begin
 					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s1,
 					  ack_o => ack_o_s(1), stb_i => stb_i_s(1), we_i => we, irq_o => irq_o_s(1) );
 
-	cyc_o_m(3) <= '0';
+	--cyc_o_m(3) <= '0';
 	--cyc_o_m(2) <= '0';
 
  	vga_reset <= rst ;

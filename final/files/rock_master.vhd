@@ -40,8 +40,11 @@ entity rock_master is
           cyc_o : out std_logic;
           stb_o : out std_logic;
           we_o  : out std_logic;
-			 location : inout std_logic_vector(31 downto 0);
-			 res :inout std_logic);
+			 xlocation : inout std_logic_vector(7 downto 0);
+			 ylocation : inout std_logic_vector(7 downto 0);
+			 res :inout std_logic;
+			 st : in std_logic;
+			 test : in std_logic);
 end rock_master;
 
 architecture Behavioral of rock_master is
@@ -53,7 +56,7 @@ architecture Behavioral of rock_master is
 	signal current_addr : std_logic_vector(31 downto 0);
 	type state_type is (FIRST,INIT, GETPIXELS1, GETPIXELS2, WAIT4MEMACK,ROCKS1,ROCKS2,ROCKS3,ROCKS4,ROCKS5,ROCKS6,ROCKS7,
 	ROCKS8,ROCKS9,ROCKS10,ROCKS11,ROCKS12,ROCKS13,ROCKS14,ROCKS15,ROCKS16,ROCKS17,ROCKS18,ROCKS19,ROCKS20,ROCKS21,ROCKS22,
-	ROCKS23,ROCKS24,ROCKS25,ROCKS26,ROCKS27,ROCKS28,ROCKS29,ROCKS30,CLOCK);
+	ROCKS23,ROCKS24,ROCKS25,ROCKS26,ROCKS27,ROCKS28,ROCKS29,ROCKS30,CLOCK,HOME,CLEARSCREEN);
 	signal state : state_type;
 
 	constant CHARS_PER_LINE : integer := 80;
@@ -97,6 +100,8 @@ architecture Behavioral of rock_master is
 	signal max_rocks: integer := 31;
 	signal timer: integer RANGE 0 to 500001000;
 	signal current_time : std_logic_vector(7 downto 0);
+	
+			signal start,restart,from_rock : std_logic;
 	signal done1,done2,done3,done4,done5,done6,done7,done8,done9,done10,done11,done12,done13,done14,done15,done16,
 	done17,done18,done19,done20,done21,done22,done23,done24,done25,done26,
 	done27,done28,done29,done30: std_logic;
@@ -245,6 +250,7 @@ begin
 			res <= '0';
 			temp2 <= 0;
 			current_line <= 0;
+			current_char <= 0;
 			scan_line <= 0;
 			current_line1 <= 0;
 			current_line2<= 0;
@@ -316,32 +322,32 @@ begin
 			
 			s1 <= 1310;
 			s2<= 2700;
-			s3 <= 4888;
-			s4 <= 5500;
+			s3 <= 3888;
+			s4 <= 2500;
 			s5 <= 1300;
 			s6 <= 1700;
 			s7 <= 2000;
 			s8 <= 2500;
-			s9 <= 4500;
-			s10 <= 3500;
-			s11 <= 4300;
-			s12 <= 4029;
+			s9 <= 2890;
+			s10 <= 3171;
+			s11 <= 1393;
+			s12 <= 3029;
 			s13 <= 1169;
-			s14 <= 4555;
+			s14 <= 1755;
 			s15 <= 3000;
-			s16 <= 4700;
+			s16 <= 3700;
 			s17 <= 2500;
-			s18 <= 3555;
+			s18 <= 3155;
 			s19 <= 1240;
-			s20 <= 3500;
+			s20 <= 3100;
 			s21 <= 2600;
-			s22 <= 4000;
+			s22 <= 1000;
 			s23 <= 2500;
-			s24 <= 4500;
+			s24 <= 3170;
 			s25 <= 1500;
 			s26 <= 3500;
 			s27 <= 3000;
-			s28 <= 4500;
+			s28 <= 1500;
 			s29 <= 1699;
 			s30 <= 2167;
 			
@@ -378,9 +384,32 @@ begin
 			rock30 <= 21;
 			
 			
-			state <= INIT;
+			state <= CLEARSCREEN;
+			
+			when CLEARSCREEN =>
+				start <= '0';
+				code <=X"29";
+				if ( current_char = CHARS_PER_LINE-1 ) then
+					current_char <= 0;
+					if ( current_line = LINES_PER_PAGE-1 ) then
+						current_char <= 0;
+						current_line <= 0;
+						code <= X"44";
+						state <= HOME;
+					else
+						current_line <= current_line + 1;
+					end if;
+				else
+						current_char <= current_char + 1;
+						state <= GETPIXELS1;
+				end if;
+			when HOME =>
+			code <= X"44";
+				 if st = '1' then state <= INIT; start <= '1'; end if;
+				 
 			when INIT =>
 			seed1 <= seed1 + 1;
+			if test = '1' then state <= FIRST; end if;
 			
 			--if inc = '1' then max_rocks <= max_rocks + 1; end if;
 			
@@ -538,15 +567,16 @@ begin
 			end if;
 			
 						
-
+			
 			state <= GETPIXELS1;		
 
 			when GETPIXELS1 =>
+		
 				-- wait for pixels to be ready from lookup table
 				state <= GETPIXELS2;
 
 			when GETPIXELS2 =>
-				pixelnum <= 0;
+						pixelnum <= 0;
 				
 					case rock_count is
 						when 1 =>
@@ -630,6 +660,7 @@ begin
 				fall_counter1 <= fall_counter1 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS2 =>
@@ -646,6 +677,7 @@ begin
 				fall_counter2 <= fall_counter2 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS3 =>
@@ -662,6 +694,7 @@ begin
 				fall_counter3 <= fall_counter3 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS4 =>
@@ -678,6 +711,7 @@ begin
 				fall_counter4 <= fall_counter4 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS5 =>
@@ -694,6 +728,7 @@ begin
 				fall_counter5 <= fall_counter5 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS6 =>
@@ -710,6 +745,7 @@ begin
 				fall_counter6 <= fall_counter6 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS7 => 
@@ -726,6 +762,7 @@ begin
 				fall_counter7 <= fall_counter7 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS8 =>
@@ -742,6 +779,7 @@ begin
 				fall_counter8 <= fall_counter8 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS9 =>
@@ -758,6 +796,7 @@ begin
 				fall_counter9 <= fall_counter9 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS10 =>
@@ -774,6 +813,7 @@ begin
 				fall_counter10 <= fall_counter10 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS11 =>
@@ -790,6 +830,7 @@ begin
 				fall_counter11 <= fall_counter11 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS12 =>
@@ -806,6 +847,7 @@ begin
 				fall_counter12 <= fall_counter12 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS13 =>
@@ -822,6 +864,7 @@ begin
 				fall_counter13 <= fall_counter13 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS14 => 
@@ -838,6 +881,7 @@ begin
 				fall_counter14 <= fall_counter14 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 					when ROCKS15=>
 			current_line <= current_line15;
@@ -853,6 +897,7 @@ begin
 				fall_counter15 <= fall_counter15 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS16 =>
@@ -869,6 +914,7 @@ begin
 				fall_counter16 <= fall_counter16 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS17 =>
@@ -885,6 +931,7 @@ begin
 				fall_counter17 <= fall_counter17 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS18 =>
@@ -901,6 +948,7 @@ begin
 				fall_counter18 <= fall_counter18 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS19 =>
@@ -917,6 +965,7 @@ begin
 				fall_counter19 <= fall_counter19 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS20 =>
@@ -933,6 +982,7 @@ begin
 				fall_counter20 <= fall_counter20 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS21 =>
@@ -950,6 +1000,7 @@ begin
 				fall_counter21 <= fall_counter21 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS22 =>
@@ -966,6 +1017,7 @@ begin
 				fall_counter22 <= fall_counter22 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS23 =>
@@ -982,6 +1034,7 @@ begin
 				fall_counter23 <= fall_counter23 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS24 =>
@@ -998,6 +1051,7 @@ begin
 				fall_counter24 <= fall_counter24 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS25 =>
@@ -1014,6 +1068,7 @@ begin
 				fall_counter25 <= fall_counter25 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS26 =>
@@ -1030,6 +1085,7 @@ begin
 				fall_counter26 <= fall_counter26 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS27 => 
@@ -1046,6 +1102,7 @@ begin
 				fall_counter27 <= fall_counter27 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS28 =>
@@ -1062,6 +1119,7 @@ begin
 				fall_counter28 <= fall_counter28 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS29 =>
@@ -1078,9 +1136,11 @@ begin
 				fall_counter29 <= fall_counter29 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when ROCKS30 =>
+			
 			current_line <= current_line30;
 			current_char <= rock30;
 				if fall_counter30 = s30 then 
@@ -1094,17 +1154,20 @@ begin
 				fall_counter30 <= fall_counter30 + 1;
 				reg_pixels <= pixels;
 				end if;
+				from_rock <= '1';
 			state <= WAIT4MEMACK;
 			
 			when WAIT4MEMACK =>
-				tock <= '0';
+				if (from_rock = '1' and 
+				xlocation = conv_std_logic_vector(current_line,8) and 
+				ylocation = conv_std_logic_vector(current_char,8))then state <= FIRST; end if;
+				from_rock <= '0';
 				if current_line = 0 then reg_pixels <= x"00"; end if;
 				seed2 <= seed2+1;
 					if ( ack_i = '1' ) then
-						
 						if ( scan_line = CHAR_HEIGHT-1 ) then
 							seed3 <= seed3+1;
-							state <= INIT;
+							if start = '1' then state <= INIT; else state <= HOME; end if;
 							rock_count <= rock_count + 1;
 							if rock_count = max_rocks + 1  then rock_count <= 1; end if;
 		--					cyc_o <= '0';
@@ -1144,13 +1207,12 @@ begin
 --	current_addr <= buffer_base + (current_line*CHARS_PER_LINE*CHAR_HEIGHT + current_char + scan_line*CHARS_PER_LINE)*CHAR_WIDTH/PIXELS_PER_WORD*4;
 	--adr_o <=  current_addr;
 	-- grab the bus when we are in a state that is reading or writing from a slave module
-	req <= '1' when state =INIT  or state=WAIT4MEMACK else '0';
+	req <= '1' when state =INIT  or state=WAIT4MEMACK or state = HOME or state = CLEARSCREEN else '0';
 	
 	--timer <= timer + 1; --500000000 = 10 second
 	--tick <=  '1' when timer = 499999999 else '0' when tock = '1';
 	--tick <= '0' when tock = '1';
 	stb_o <= req;
 	cyc_o <= req;
-	location <= conv_std_logic_vector(current_line*current_char,32);
-
+		
 end Behavioral;

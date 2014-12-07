@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: videomem.prj
 
@@ -164,7 +164,7 @@ Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <videomem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd" line 97: Unconnected output port 'leds_o' of component 'wb_intercon'.
+WARNING:Xst:753 - "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd" line 100: Unconnected output port 'leds_o' of component 'wb_intercon'.
 Entity <videomem> analyzed. Unit <videomem> generated.
 
 Analyzing generic Entity <wb_intercon> in library <work> (Architecture <ICN0002a1>).
@@ -427,39 +427,37 @@ Analyzing Entity <rock_master> in library <work> (Architecture <Behavioral>).
 INFO:Xst:2679 - Register <res> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <temp2> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <temp> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <code> in unit <rock_master> has a constant value of 01000100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s1> in unit <rock_master> has a constant value of 10100011110 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s2> in unit <rock_master> has a constant value of 101010001100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s3> in unit <rock_master> has a constant value of 1001100011000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s4> in unit <rock_master> has a constant value of 1010101111100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s3> in unit <rock_master> has a constant value of 111100110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s4> in unit <rock_master> has a constant value of 100111000100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s5> in unit <rock_master> has a constant value of 10100010100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s6> in unit <rock_master> has a constant value of 11010100100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s7> in unit <rock_master> has a constant value of 11111010000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s8> in unit <rock_master> has a constant value of 100111000100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s9> in unit <rock_master> has a constant value of 1000110010100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s10> in unit <rock_master> has a constant value of 110110101100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s11> in unit <rock_master> has a constant value of 1000011001100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s12> in unit <rock_master> has a constant value of 111110111101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s9> in unit <rock_master> has a constant value of 101101001010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s10> in unit <rock_master> has a constant value of 110001100011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s11> in unit <rock_master> has a constant value of 10101110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s12> in unit <rock_master> has a constant value of 101111010101 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s13> in unit <rock_master> has a constant value of 10010010001 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s14> in unit <rock_master> has a constant value of 1000111001011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s14> in unit <rock_master> has a constant value of 11011011011 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s15> in unit <rock_master> has a constant value of 101110111000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s16> in unit <rock_master> has a constant value of 1001001011100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s16> in unit <rock_master> has a constant value of 111001110100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s17> in unit <rock_master> has a constant value of 100111000100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s18> in unit <rock_master> has a constant value of 110111100011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s18> in unit <rock_master> has a constant value of 110001010011 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s19> in unit <rock_master> has a constant value of 10011011000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s20> in unit <rock_master> has a constant value of 110110101100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s20> in unit <rock_master> has a constant value of 110000011100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s21> in unit <rock_master> has a constant value of 101000101000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s22> in unit <rock_master> has a constant value of 111110100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s22> in unit <rock_master> has a constant value of 1111101000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s23> in unit <rock_master> has a constant value of 100111000100 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s24> in unit <rock_master> has a constant value of 1000110010100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s24> in unit <rock_master> has a constant value of 110001100010 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s25> in unit <rock_master> has a constant value of 10111011100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s26> in unit <rock_master> has a constant value of 110110101100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s27> in unit <rock_master> has a constant value of 101110111000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <s28> in unit <rock_master> has a constant value of 1000110010100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s28> in unit <rock_master> has a constant value of 10111011100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s29> in unit <rock_master> has a constant value of 11010100011 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <s30> in unit <rock_master> has a constant value of 100001110111 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <pixelnum> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <tock> in unit <rock_master> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <rock_master> analyzed. Unit <rock_master> generated.
 
 Analyzing generic Entity <sram16ctl> in library <work> (Architecture <Behavioral>).
@@ -656,43 +654,11 @@ Unit <char8x12_lookup_table> synthesized.
 
 Synthesizing Unit <videomem_master>.
     Related source file is "C:/Users/Aaron/Documents/ise/final/files/master.vhd".
-WARNING:Xst:2563 - Inout <location<18>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<23>> is never assigned. Tied to value Z.
 WARNING:Xst:647 - Input <dat_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <location<24>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<19>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<0>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<30>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<25>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<1>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<31>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<26>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<2>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<27>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<3>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<28>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<4>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<29>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<5>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<6>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<7>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<8>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<9>> is never assigned. Tied to value Z.
 WARNING:Xst:1305 - Output <leds_o> is never assigned. Tied to value 00000000.
-WARNING:Xst:2563 - Inout <location<10>> is never assigned. Tied to value Z.
 WARNING:Xst:647 - Input <irq_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <location<11>> is never assigned. Tied to value Z.
 WARNING:Xst:2563 - Inout <res> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<12>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<13>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<14>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<20>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<15>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<21>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<16>> is never assigned. Tied to value Z.
 WARNING:Xst:647 - Input <irqv_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <location<22>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <location<17>> is never assigned. Tied to value Z.
 WARNING:Xst:1780 - Signal <volume> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <txtcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ship_speed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -718,53 +684,21 @@ WARNING:Xst:653 - Signal <alt> is used but never assigned. This sourceless signa
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 452: The result of a 4x7-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 453: The result of a 4x7-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
     Found 1-bit tristate buffer for signal <res>.
-    Found 1-bit tristate buffer for signal <location<31>>.
-    Found 1-bit tristate buffer for signal <location<30>>.
-    Found 1-bit tristate buffer for signal <location<29>>.
-    Found 1-bit tristate buffer for signal <location<28>>.
-    Found 1-bit tristate buffer for signal <location<27>>.
-    Found 1-bit tristate buffer for signal <location<26>>.
-    Found 1-bit tristate buffer for signal <location<25>>.
-    Found 1-bit tristate buffer for signal <location<24>>.
-    Found 1-bit tristate buffer for signal <location<23>>.
-    Found 1-bit tristate buffer for signal <location<22>>.
-    Found 1-bit tristate buffer for signal <location<21>>.
-    Found 1-bit tristate buffer for signal <location<20>>.
-    Found 1-bit tristate buffer for signal <location<19>>.
-    Found 1-bit tristate buffer for signal <location<18>>.
-    Found 1-bit tristate buffer for signal <location<17>>.
-    Found 1-bit tristate buffer for signal <location<16>>.
-    Found 1-bit tristate buffer for signal <location<15>>.
-    Found 1-bit tristate buffer for signal <location<14>>.
-    Found 1-bit tristate buffer for signal <location<13>>.
-    Found 1-bit tristate buffer for signal <location<12>>.
-    Found 1-bit tristate buffer for signal <location<11>>.
-    Found 1-bit tristate buffer for signal <location<10>>.
-    Found 1-bit tristate buffer for signal <location<9>>.
-    Found 1-bit tristate buffer for signal <location<8>>.
-    Found 1-bit tristate buffer for signal <location<7>>.
-    Found 1-bit tristate buffer for signal <location<6>>.
-    Found 1-bit tristate buffer for signal <location<5>>.
-    Found 1-bit tristate buffer for signal <location<4>>.
-    Found 1-bit tristate buffer for signal <location<3>>.
-    Found 1-bit tristate buffer for signal <location<2>>.
-    Found 1-bit tristate buffer for signal <location<1>>.
-    Found 1-bit tristate buffer for signal <location<0>>.
     Found 2-bit up counter for signal <alternate>.
     Found 8-bit register for signal <code>.
     Found 4-bit up counter for signal <count>.
     Found 4-bit up counter for signal <count2>.
-    Found 16-bit adder for signal <current_addr$add0000> created at line 452.
-    Found 17-bit adder for signal <current_addr$addsub0000> created at line 452.
-    Found 4x7-bit multiplier for signal <current_addr$mult0000> created at line 452.
-    Found 6x7-bit multiplier for signal <current_addr$mult0001> created at line 452.
-    Found 13x4-bit multiplier for signal <current_addr$mult0002> created at line 452.
+    Found 16-bit adder for signal <current_addr$add0000> created at line 453.
+    Found 17-bit adder for signal <current_addr$addsub0000> created at line 453.
+    Found 4x7-bit multiplier for signal <current_addr$mult0000> created at line 453.
+    Found 6x7-bit multiplier for signal <current_addr$mult0001> created at line 453.
+    Found 13x4-bit multiplier for signal <current_addr$mult0002> created at line 453.
     Found 7-bit register for signal <current_char>.
-    Found 7-bit adder for signal <current_char$addsub0000> created at line 194.
+    Found 7-bit adder for signal <current_char$addsub0000> created at line 195.
     Found 6-bit register for signal <current_line>.
-    Found 6-bit adder for signal <current_line$addsub0000> created at line 191.
+    Found 6-bit adder for signal <current_line$addsub0000> created at line 192.
     Found 1-bit register for signal <d_down>.
     Found 32-bit up counter for signal <delete_count>.
     Found 1-bit register for signal <delete_laser>.
@@ -774,15 +708,17 @@ WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 452
     Found 32-bit register for signal <laser_char>.
     Found 32-bit up counter for signal <laser_counter>.
     Found 32-bit register for signal <laser_line>.
-    Found 32-bit subtractor for signal <laser_line$share0000> created at line 161.
+    Found 32-bit subtractor for signal <laser_line$share0000> created at line 162.
     Found 32-bit up counter for signal <move_counter>.
     Found 1-bit register for signal <r_down>.
     Found 8-bit register for signal <reg_pixels>.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0000> created at line 357.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0000> created at line 358.
     Found 4-bit register for signal <scan_line>.
-    Found 4-bit adder for signal <scan_line$addsub0000> created at line 197.
+    Found 4-bit adder for signal <scan_line$addsub0000> created at line 198.
     Found 1-bit register for signal <shift>.
     Found 32-bit updown counter for signal <ship_char>.
+    Found 32-bit comparator greatequal for signal <ship_char$cmp_ge0000> created at line 384.
+    Found 32-bit comparator lessequal for signal <ship_char$cmp_le0000> created at line 381.
     Found 32-bit updown counter for signal <ship_line>.
     Found 1-bit register for signal <shoot>.
     Found 19-bit up counter for signal <timer>.
@@ -793,22 +729,24 @@ WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/master.vhd" line 452
 	inferred 106 D-type flip-flop(s).
 	inferred   6 Adder/Subtractor(s).
 	inferred   3 Multiplier(s).
-	inferred   1 Comparator(s).
-	inferred  33 Tristate(s).
+	inferred   3 Comparator(s).
+	inferred   1 Tristate(s).
 Unit <videomem_master> synthesized.
 
 
 Synthesizing Unit <rock_master>.
     Related source file is "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd".
 WARNING:Xst:647 - Input <dat_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <test> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <volume> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <txtcolor> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <tock> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <timer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <tick> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <temp2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <temp<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <shift> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <restart> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <pixelnum<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <newrock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <max_rocks> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011111.
@@ -821,10 +759,10 @@ WARNING:Xst:653 - Signal <alt> is used but never assigned. This sourceless signa
 INFO:Xst:1799 - State clock is never reached in FSM <state>.
     Found finite state machine <FSM_4> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 35                                             |
-    | Transitions        | 67                                             |
-    | Inputs             | 32                                             |
-    | Outputs            | 35                                             |
+    | States             | 37                                             |
+    | Transitions        | 76                                             |
+    | Inputs             | 39                                             |
+    | Outputs            | 38                                             |
     | Clock              | clk_i                     (rising_edge)        |
     | Reset              | rst_i                     (positive)           |
     | Reset type         | asynchronous                                   |
@@ -833,76 +771,78 @@ INFO:Xst:1799 - State clock is never reached in FSM <state>.
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" line 1154: The result of a 7x6-bit multiplication is partially used. Only the 12 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" line 1143: The result of a 4x7-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-    Found 13x13-bit multiplier for signal <$mult0000> created at line 435.
-    Found 16-bit adder for signal <current_addr$add0000> created at line 1143.
-    Found 17-bit adder for signal <current_addr$addsub0000> created at line 1143.
-    Found 4x7-bit multiplier for signal <current_addr$mult0001> created at line 1143.
-    Found 6x7-bit multiplier for signal <current_addr$mult0002> created at line 1143.
-    Found 13x4-bit multiplier for signal <current_addr$mult0003> created at line 1143.
+WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" line 1206: The result of a 4x7-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 13x13-bit multiplier for signal <$mult0000> created at line 464.
+    Found 8-bit register for signal <code>.
+    Found 16-bit adder for signal <current_addr$add0000> created at line 1206.
+    Found 17-bit adder for signal <current_addr$addsub0000> created at line 1206.
+    Found 4x7-bit multiplier for signal <current_addr$mult0001> created at line 1206.
+    Found 6x7-bit multiplier for signal <current_addr$mult0002> created at line 1206.
+    Found 13x4-bit multiplier for signal <current_addr$mult0003> created at line 1206.
     Found 7-bit register for signal <current_char>.
+    Found 7-bit adder for signal <current_char$addsub0000> created at line 403.
     Found 6-bit register for signal <current_line>.
+    Found 6-bit adder for signal <current_line$addsub0000> created at line 400.
     Found 6-bit register for signal <current_line1>.
-    Found 6-bit adder for signal <current_line1$addsub0000> created at line 624.
+    Found 6-bit adder for signal <current_line1$addsub0000> created at line 654.
     Found 6-bit register for signal <current_line10>.
-    Found 6-bit adder for signal <current_line10$addsub0000> created at line 768.
+    Found 6-bit adder for signal <current_line10$addsub0000> created at line 807.
     Found 6-bit register for signal <current_line11>.
-    Found 6-bit adder for signal <current_line11$addsub0000> created at line 784.
+    Found 6-bit adder for signal <current_line11$addsub0000> created at line 824.
     Found 6-bit register for signal <current_line12>.
-    Found 6-bit adder for signal <current_line12$addsub0000> created at line 800.
+    Found 6-bit adder for signal <current_line12$addsub0000> created at line 841.
     Found 6-bit register for signal <current_line13>.
-    Found 6-bit adder for signal <current_line13$addsub0000> created at line 816.
+    Found 6-bit adder for signal <current_line13$addsub0000> created at line 858.
     Found 6-bit register for signal <current_line14>.
-    Found 6-bit adder for signal <current_line14$addsub0000> created at line 832.
+    Found 6-bit adder for signal <current_line14$addsub0000> created at line 875.
     Found 6-bit register for signal <current_line15>.
-    Found 6-bit adder for signal <current_line15$addsub0000> created at line 847.
+    Found 6-bit adder for signal <current_line15$addsub0000> created at line 891.
     Found 6-bit register for signal <current_line16>.
-    Found 6-bit adder for signal <current_line16$addsub0000> created at line 863.
+    Found 6-bit adder for signal <current_line16$addsub0000> created at line 908.
     Found 6-bit register for signal <current_line17>.
-    Found 6-bit adder for signal <current_line17$addsub0000> created at line 879.
+    Found 6-bit adder for signal <current_line17$addsub0000> created at line 925.
     Found 6-bit register for signal <current_line18>.
-    Found 6-bit adder for signal <current_line18$addsub0000> created at line 895.
+    Found 6-bit adder for signal <current_line18$addsub0000> created at line 942.
     Found 6-bit register for signal <current_line19>.
-    Found 6-bit adder for signal <current_line19$addsub0000> created at line 911.
+    Found 6-bit adder for signal <current_line19$addsub0000> created at line 959.
     Found 6-bit register for signal <current_line2>.
-    Found 6-bit adder for signal <current_line2$addsub0000> created at line 640.
+    Found 6-bit adder for signal <current_line2$addsub0000> created at line 671.
     Found 6-bit register for signal <current_line20>.
-    Found 6-bit adder for signal <current_line20$addsub0000> created at line 927.
+    Found 6-bit adder for signal <current_line20$addsub0000> created at line 976.
     Found 6-bit register for signal <current_line21>.
-    Found 6-bit adder for signal <current_line21$addsub0000> created at line 944.
+    Found 6-bit adder for signal <current_line21$addsub0000> created at line 994.
     Found 6-bit register for signal <current_line22>.
-    Found 6-bit adder for signal <current_line22$addsub0000> created at line 960.
+    Found 6-bit adder for signal <current_line22$addsub0000> created at line 1011.
     Found 6-bit register for signal <current_line23>.
-    Found 6-bit adder for signal <current_line23$addsub0000> created at line 976.
+    Found 6-bit adder for signal <current_line23$addsub0000> created at line 1028.
     Found 6-bit register for signal <current_line24>.
-    Found 6-bit adder for signal <current_line24$addsub0000> created at line 992.
+    Found 6-bit adder for signal <current_line24$addsub0000> created at line 1045.
     Found 6-bit register for signal <current_line25>.
-    Found 6-bit adder for signal <current_line25$addsub0000> created at line 1008.
+    Found 6-bit adder for signal <current_line25$addsub0000> created at line 1062.
     Found 6-bit register for signal <current_line26>.
-    Found 6-bit adder for signal <current_line26$addsub0000> created at line 1024.
+    Found 6-bit adder for signal <current_line26$addsub0000> created at line 1079.
     Found 6-bit register for signal <current_line27>.
-    Found 6-bit adder for signal <current_line27$addsub0000> created at line 1040.
+    Found 6-bit adder for signal <current_line27$addsub0000> created at line 1096.
     Found 6-bit register for signal <current_line28>.
-    Found 6-bit adder for signal <current_line28$addsub0000> created at line 1056.
+    Found 6-bit adder for signal <current_line28$addsub0000> created at line 1113.
     Found 6-bit register for signal <current_line29>.
-    Found 6-bit adder for signal <current_line29$addsub0000> created at line 1072.
+    Found 6-bit adder for signal <current_line29$addsub0000> created at line 1130.
     Found 6-bit register for signal <current_line3>.
-    Found 6-bit adder for signal <current_line3$addsub0000> created at line 656.
+    Found 6-bit adder for signal <current_line3$addsub0000> created at line 688.
     Found 6-bit register for signal <current_line30>.
-    Found 6-bit adder for signal <current_line30$addsub0000> created at line 1088.
+    Found 6-bit adder for signal <current_line30$addsub0000> created at line 1148.
     Found 6-bit register for signal <current_line4>.
-    Found 6-bit adder for signal <current_line4$addsub0000> created at line 672.
+    Found 6-bit adder for signal <current_line4$addsub0000> created at line 705.
     Found 6-bit register for signal <current_line5>.
-    Found 6-bit adder for signal <current_line5$addsub0000> created at line 688.
+    Found 6-bit adder for signal <current_line5$addsub0000> created at line 722.
     Found 6-bit register for signal <current_line6>.
-    Found 6-bit adder for signal <current_line6$addsub0000> created at line 704.
+    Found 6-bit adder for signal <current_line6$addsub0000> created at line 739.
     Found 6-bit register for signal <current_line7>.
-    Found 6-bit adder for signal <current_line7$addsub0000> created at line 720.
+    Found 6-bit adder for signal <current_line7$addsub0000> created at line 756.
     Found 6-bit register for signal <current_line8>.
-    Found 6-bit adder for signal <current_line8$addsub0000> created at line 736.
+    Found 6-bit adder for signal <current_line8$addsub0000> created at line 773.
     Found 6-bit register for signal <current_line9>.
-    Found 6-bit adder for signal <current_line9$addsub0000> created at line 752.
+    Found 6-bit adder for signal <current_line9$addsub0000> created at line 790.
     Found 1-bit register for signal <done1>.
     Found 1-bit register for signal <done10>.
     Found 1-bit register for signal <done11>.
@@ -934,101 +874,101 @@ WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" lin
     Found 1-bit register for signal <done8>.
     Found 1-bit register for signal <done9>.
     Found 32-bit register for signal <fall_counter1>.
-    Found 32-bit adder for signal <fall_counter1$addsub0000> created at line 628.
+    Found 32-bit adder for signal <fall_counter1$addsub0000> created at line 658.
     Found 32-bit register for signal <fall_counter10>.
-    Found 32-bit adder for signal <fall_counter10$addsub0000> created at line 772.
+    Found 32-bit adder for signal <fall_counter10$addsub0000> created at line 811.
     Found 32-bit register for signal <fall_counter11>.
-    Found 32-bit adder for signal <fall_counter11$addsub0000> created at line 788.
+    Found 32-bit adder for signal <fall_counter11$addsub0000> created at line 828.
     Found 32-bit register for signal <fall_counter12>.
-    Found 32-bit adder for signal <fall_counter12$addsub0000> created at line 804.
+    Found 32-bit adder for signal <fall_counter12$addsub0000> created at line 845.
     Found 32-bit register for signal <fall_counter13>.
-    Found 32-bit adder for signal <fall_counter13$addsub0000> created at line 820.
+    Found 32-bit adder for signal <fall_counter13$addsub0000> created at line 862.
     Found 32-bit register for signal <fall_counter14>.
-    Found 32-bit adder for signal <fall_counter14$addsub0000> created at line 836.
+    Found 32-bit adder for signal <fall_counter14$addsub0000> created at line 879.
     Found 32-bit register for signal <fall_counter15>.
-    Found 32-bit adder for signal <fall_counter15$addsub0000> created at line 851.
+    Found 32-bit adder for signal <fall_counter15$addsub0000> created at line 895.
     Found 32-bit register for signal <fall_counter16>.
-    Found 32-bit adder for signal <fall_counter16$addsub0000> created at line 867.
+    Found 32-bit adder for signal <fall_counter16$addsub0000> created at line 912.
     Found 32-bit register for signal <fall_counter17>.
-    Found 32-bit adder for signal <fall_counter17$addsub0000> created at line 883.
+    Found 32-bit adder for signal <fall_counter17$addsub0000> created at line 929.
     Found 32-bit register for signal <fall_counter18>.
-    Found 32-bit adder for signal <fall_counter18$addsub0000> created at line 899.
+    Found 32-bit adder for signal <fall_counter18$addsub0000> created at line 946.
     Found 32-bit register for signal <fall_counter19>.
-    Found 32-bit adder for signal <fall_counter19$addsub0000> created at line 915.
+    Found 32-bit adder for signal <fall_counter19$addsub0000> created at line 963.
     Found 32-bit register for signal <fall_counter2>.
-    Found 32-bit adder for signal <fall_counter2$addsub0000> created at line 644.
+    Found 32-bit adder for signal <fall_counter2$addsub0000> created at line 675.
     Found 32-bit register for signal <fall_counter20>.
-    Found 32-bit adder for signal <fall_counter20$addsub0000> created at line 931.
+    Found 32-bit adder for signal <fall_counter20$addsub0000> created at line 980.
     Found 32-bit register for signal <fall_counter21>.
-    Found 32-bit adder for signal <fall_counter21$addsub0000> created at line 948.
+    Found 32-bit adder for signal <fall_counter21$addsub0000> created at line 998.
     Found 32-bit register for signal <fall_counter22>.
-    Found 32-bit adder for signal <fall_counter22$addsub0000> created at line 964.
+    Found 32-bit adder for signal <fall_counter22$addsub0000> created at line 1015.
     Found 32-bit register for signal <fall_counter23>.
-    Found 32-bit adder for signal <fall_counter23$addsub0000> created at line 980.
+    Found 32-bit adder for signal <fall_counter23$addsub0000> created at line 1032.
     Found 32-bit register for signal <fall_counter24>.
-    Found 32-bit adder for signal <fall_counter24$addsub0000> created at line 996.
+    Found 32-bit adder for signal <fall_counter24$addsub0000> created at line 1049.
     Found 32-bit register for signal <fall_counter25>.
-    Found 32-bit adder for signal <fall_counter25$addsub0000> created at line 1012.
+    Found 32-bit adder for signal <fall_counter25$addsub0000> created at line 1066.
     Found 32-bit register for signal <fall_counter26>.
-    Found 32-bit adder for signal <fall_counter26$addsub0000> created at line 1028.
+    Found 32-bit adder for signal <fall_counter26$addsub0000> created at line 1083.
     Found 32-bit register for signal <fall_counter27>.
-    Found 32-bit adder for signal <fall_counter27$addsub0000> created at line 1044.
+    Found 32-bit adder for signal <fall_counter27$addsub0000> created at line 1100.
     Found 32-bit register for signal <fall_counter28>.
-    Found 32-bit adder for signal <fall_counter28$addsub0000> created at line 1060.
+    Found 32-bit adder for signal <fall_counter28$addsub0000> created at line 1117.
     Found 32-bit register for signal <fall_counter29>.
-    Found 32-bit adder for signal <fall_counter29$addsub0000> created at line 1076.
+    Found 32-bit adder for signal <fall_counter29$addsub0000> created at line 1134.
     Found 32-bit register for signal <fall_counter3>.
-    Found 32-bit adder for signal <fall_counter3$addsub0000> created at line 660.
+    Found 32-bit adder for signal <fall_counter3$addsub0000> created at line 692.
     Found 32-bit register for signal <fall_counter30>.
-    Found 32-bit adder for signal <fall_counter30$addsub0000> created at line 1092.
+    Found 32-bit adder for signal <fall_counter30$addsub0000> created at line 1152.
     Found 32-bit register for signal <fall_counter4>.
-    Found 32-bit adder for signal <fall_counter4$addsub0000> created at line 676.
+    Found 32-bit adder for signal <fall_counter4$addsub0000> created at line 709.
     Found 32-bit register for signal <fall_counter5>.
-    Found 32-bit adder for signal <fall_counter5$addsub0000> created at line 692.
+    Found 32-bit adder for signal <fall_counter5$addsub0000> created at line 726.
     Found 32-bit register for signal <fall_counter6>.
-    Found 32-bit adder for signal <fall_counter6$addsub0000> created at line 708.
+    Found 32-bit adder for signal <fall_counter6$addsub0000> created at line 743.
     Found 32-bit register for signal <fall_counter7>.
-    Found 32-bit adder for signal <fall_counter7$addsub0000> created at line 724.
+    Found 32-bit adder for signal <fall_counter7$addsub0000> created at line 760.
     Found 32-bit register for signal <fall_counter8>.
-    Found 32-bit adder for signal <fall_counter8$addsub0000> created at line 740.
+    Found 32-bit adder for signal <fall_counter8$addsub0000> created at line 777.
     Found 32-bit register for signal <fall_counter9>.
-    Found 32-bit adder for signal <fall_counter9$addsub0000> created at line 756.
-    Found 7x6-bit multiplier for signal <location$mult0001> created at line 1154.
+    Found 32-bit adder for signal <fall_counter9$addsub0000> created at line 794.
+    Found 1-bit register for signal <from_rock>.
     Found 8-bit register for signal <reg_pixels>.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0000> created at line 625.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0001> created at line 641.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0002> created at line 657.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0003> created at line 673.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0004> created at line 689.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0005> created at line 705.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0006> created at line 721.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0007> created at line 737.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0008> created at line 753.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0009> created at line 769.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0010> created at line 785.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0011> created at line 801.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0012> created at line 817.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0013> created at line 833.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0014> created at line 848.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0015> created at line 864.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0016> created at line 880.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0017> created at line 896.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0018> created at line 912.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0019> created at line 928.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0020> created at line 945.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0021> created at line 961.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0022> created at line 977.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0023> created at line 993.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0024> created at line 1009.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0025> created at line 1025.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0026> created at line 1041.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0027> created at line 1057.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0028> created at line 1073.
-    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0029> created at line 1089.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0000> created at line 655.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0001> created at line 672.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0002> created at line 689.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0003> created at line 706.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0004> created at line 723.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0005> created at line 740.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0006> created at line 757.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0007> created at line 774.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0008> created at line 791.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0009> created at line 808.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0010> created at line 825.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0011> created at line 842.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0012> created at line 859.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0013> created at line 876.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0014> created at line 892.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0015> created at line 909.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0016> created at line 926.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0017> created at line 943.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0018> created at line 960.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0019> created at line 977.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0020> created at line 995.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0021> created at line 1012.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0022> created at line 1029.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0023> created at line 1046.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0024> created at line 1063.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0025> created at line 1080.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0026> created at line 1097.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0027> created at line 1114.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0028> created at line 1131.
+    Found 32-bit comparator greater for signal <reg_pixels$cmp_gt0029> created at line 1149.
     Found 7-bit register for signal <rock1>.
-    Found 6-bit adder carry out for signal <rock1$addsub0001> created at line 390.
+    Found 6-bit adder carry out for signal <rock1$addsub0001> created at line 419.
     Found 7-bit register for signal <rock10>.
-    Found 6-bit adder carry out for signal <rock10$addsub0000> created at line 435.
+    Found 6-bit adder carry out for signal <rock10$addsub0000> created at line 464.
     Found 7-bit register for signal <rock11>.
     Found 7-bit register for signal <rock12>.
     Found 7-bit register for signal <rock13>.
@@ -1058,25 +998,28 @@ WARNING:Xst:643 - "C:/Users/Aaron/Documents/ise/final/files/rock_master.vhd" lin
     Found 7-bit register for signal <rock8>.
     Found 7-bit register for signal <rock9>.
     Found 32-bit register for signal <rock_count>.
-    Found 32-bit adder for signal <rock_count$addsub0000> created at line 1108.
+    Found 32-bit adder for signal <rock_count$addsub0000> created at line 1171.
     Found 4-bit register for signal <scan_line>.
-    Found 4-bit adder for signal <scan_line$addsub0000> created at line 1118.
+    Found 4-bit adder for signal <scan_line$addsub0000> created at line 1181.
     Found 13-bit up counter for signal <seed1>.
     Found 13-bit up counter for signal <seed2>.
     Found 4-bit up counter for signal <seed3>.
+    Found 1-bit register for signal <start>.
+    Found 8-bit comparator equal for signal <state$cmp_eq0033> created at line 1161.
+    Found 8-bit comparator equal for signal <state$cmp_eq0034> created at line 1161.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   3 Counter(s).
-	inferred 1405 D-type flip-flop(s).
-	inferred  66 Adder/Subtractor(s).
-	inferred   5 Multiplier(s).
-	inferred  30 Comparator(s).
+	inferred 1415 D-type flip-flop(s).
+	inferred  68 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred  32 Comparator(s).
 Unit <rock_master> synthesized.
 
 
 Synthesizing Unit <videomem>.
     Related source file is "C:/Users/Aaron/Documents/ise/final/files/videomem.vhd".
-WARNING:Xst:647 - Input <btn<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btn<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <vga_reset> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ascii_data_available> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ascii_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1088,6 +1031,7 @@ WARNING:Xst:653 - Signal <IRQ_O_S<0>> is used but never assigned. This sourceles
 WARNING:Xst:653 - Signal <DAT_O_S3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:653 - Signal <DAT_O_S2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:653 - Signal <DAT_O_M3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <CYC_O_M<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <ADR_O_M3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:653 - Signal <ACK_O_S<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:646 - Signal <ACK_I_M<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1099,14 +1043,13 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 9
+# Multipliers                                          : 8
  10x11-bit multiplier                                  : 1
  13x13-bit multiplier                                  : 1
  13x4-bit multiplier                                   : 2
  4x7-bit multiplier                                    : 2
  6x7-bit multiplier                                    : 2
- 7x6-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 80
+# Adders/Subtractors                                   : 82
  10-bit adder                                          : 1
  10-bit subtractor                                     : 2
  16-bit adder                                          : 2
@@ -1117,9 +1060,9 @@ Macro Statistics
  32-bit adder                                          : 31
  32-bit subtractor                                     : 1
  4-bit adder                                           : 2
- 6-bit adder                                           : 31
+ 6-bit adder                                           : 32
  6-bit adder carry out                                 : 2
- 7-bit adder                                           : 2
+ 7-bit adder                                           : 3
 # Counters                                             : 14
  10-bit up counter                                     : 2
  13-bit up counter                                     : 2
@@ -1128,27 +1071,30 @@ Macro Statistics
  32-bit up counter                                     : 3
  32-bit updown counter                                 : 2
  4-bit up counter                                      : 3
-# Registers                                            : 180
- 1-bit register                                        : 75
+# Registers                                            : 183
+ 1-bit register                                        : 77
  31-bit register                                       : 1
  32-bit register                                       : 33
  4-bit register                                        : 2
  6-bit register                                        : 32
  7-bit register                                        : 33
- 8-bit register                                        : 4
-# Comparators                                          : 44
+ 8-bit register                                        : 5
+# Comparators                                          : 48
  10-bit comparator greatequal                          : 4
  10-bit comparator less                                : 3
  10-bit comparator lessequal                           : 2
  31-bit comparator greatequal                          : 1
  31-bit comparator less                                : 3
+ 32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 31
+ 32-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 2
 # Multiplexers                                         : 6
  1-bit 4-to-1 multiplexer                              : 2
  32-bit 4-to-1 multiplexer                             : 3
  4-bit 8-to-1 multiplexer                              : 1
-# Tristates                                            : 35
- 1-bit tristate buffer                                 : 34
+# Tristates                                            : 3
+ 1-bit tristate buffer                                 : 2
  16-bit tristate buffer                                : 1
 # Xors                                                 : 1
  1-bit xor2                                            : 1
@@ -1160,47 +1106,49 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_4> for best encoding.
-Optimizing FSM <rock_master/state/FSM> on signal <state[1:35]> with one-hot encoding.
-----------------------------------------------------
+Optimizing FSM <rock_master/state/FSM> on signal <state[1:37]> with one-hot encoding.
+------------------------------------------------------
  State       | Encoding
-----------------------------------------------------
- first       | 00000000000000000000000000000000001
- init        | 00000000000000000000000000000000100
- getpixels1  | 00000000000000000000000000000000010
- getpixels2  | 00000000000000000000000000000001000
- wait4memack | 10000000000000000000000000000000000
- rocks1      | 00000000000000000000000000000010000
- rocks2      | 00000000000000000000000000000100000
- rocks3      | 00000000000000000000000000001000000
- rocks4      | 00000000000000000000000000010000000
- rocks5      | 00000000000000000000000000100000000
- rocks6      | 00000000000000000000000001000000000
- rocks7      | 00000000000000000000000010000000000
- rocks8      | 00000000000000000000000100000000000
- rocks9      | 00000000000000000000001000000000000
- rocks10     | 00000000000000000000010000000000000
- rocks11     | 00000000000000000000100000000000000
- rocks12     | 00000000000000000001000000000000000
- rocks13     | 00000000000000000010000000000000000
- rocks14     | 00000000000000000100000000000000000
- rocks15     | 00000000000000001000000000000000000
- rocks16     | 00000000000000010000000000000000000
- rocks17     | 00000000000000100000000000000000000
- rocks18     | 00000000000001000000000000000000000
- rocks19     | 00000000000010000000000000000000000
- rocks20     | 00000000000100000000000000000000000
- rocks21     | 00000000001000000000000000000000000
- rocks22     | 00000000010000000000000000000000000
- rocks23     | 00000000100000000000000000000000000
- rocks24     | 00000001000000000000000000000000000
- rocks25     | 00000010000000000000000000000000000
- rocks26     | 00000100000000000000000000000000000
- rocks27     | 00001000000000000000000000000000000
- rocks28     | 00010000000000000000000000000000000
- rocks29     | 00100000000000000000000000000000000
- rocks30     | 01000000000000000000000000000000000
+------------------------------------------------------
+ first       | 0000000000000000000000000000000000001
+ init        | 0000000000000000000000000000000010000
+ getpixels1  | 0000000000000000000000000000000001000
+ getpixels2  | 0000000000000000000000000000000100000
+ wait4memack | 1000000000000000000000000000000000000
+ rocks1      | 0000000000000000000000000000001000000
+ rocks2      | 0000000000000000000000000000010000000
+ rocks3      | 0000000000000000000000000000100000000
+ rocks4      | 0000000000000000000000000001000000000
+ rocks5      | 0000000000000000000000000010000000000
+ rocks6      | 0000000000000000000000000100000000000
+ rocks7      | 0000000000000000000000001000000000000
+ rocks8      | 0000000000000000000000010000000000000
+ rocks9      | 0000000000000000000000100000000000000
+ rocks10     | 0000000000000000000001000000000000000
+ rocks11     | 0000000000000000000010000000000000000
+ rocks12     | 0000000000000000000100000000000000000
+ rocks13     | 0000000000000000001000000000000000000
+ rocks14     | 0000000000000000010000000000000000000
+ rocks15     | 0000000000000000100000000000000000000
+ rocks16     | 0000000000000001000000000000000000000
+ rocks17     | 0000000000000010000000000000000000000
+ rocks18     | 0000000000000100000000000000000000000
+ rocks19     | 0000000000001000000000000000000000000
+ rocks20     | 0000000000010000000000000000000000000
+ rocks21     | 0000000000100000000000000000000000000
+ rocks22     | 0000000001000000000000000000000000000
+ rocks23     | 0000000010000000000000000000000000000
+ rocks24     | 0000000100000000000000000000000000000
+ rocks25     | 0000001000000000000000000000000000000
+ rocks26     | 0000010000000000000000000000000000000
+ rocks27     | 0000100000000000000000000000000000000
+ rocks28     | 0001000000000000000000000000000000000
+ rocks29     | 0010000000000000000000000000000000000
+ rocks30     | 0100000000000000000000000000000000000
  clock       | unreached
-----------------------------------------------------
+ home        | 0000000000000000000000000000000000100
+ clearscreen | 0000000000000000000000000000000000010
+------------------------------------------------------
 Analyzing FSM <FSM_3> for best encoding.
 Optimizing FSM <videomem_master/state/FSM> on signal <state[1:11]> with one-hot encoding.
 ----------------------------
@@ -1255,6 +1203,9 @@ Optimizing FSM <wb_ps2_kb/state2/FSM> on signal <state2[1:3]> with one-hot encod
 -------------------------
 WARNING:Xst:1710 - FF/Latch <LGNT3> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clk_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <code_1> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <code_4> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <code_7> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <laser_char_7> of sequential type is unconnected in block <videomem_master>.
 WARNING:Xst:2677 - Node <laser_char_8> of sequential type is unconnected in block <videomem_master>.
 WARNING:Xst:2677 - Node <laser_char_9> of sequential type is unconnected in block <videomem_master>.
@@ -1311,14 +1262,13 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 5
-# Multipliers                                          : 9
+# Multipliers                                          : 8
  10x11-bit multiplier                                  : 1
  13x13-bit multiplier                                  : 1
  13x4-bit multiplier                                   : 2
  4x7-bit multiplier                                    : 2
  6x7-bit multiplier                                    : 2
- 7x6-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 80
+# Adders/Subtractors                                   : 82
  10-bit adder                                          : 1
  10-bit subtractor                                     : 2
  16-bit adder                                          : 2
@@ -1329,9 +1279,9 @@ Macro Statistics
  32-bit adder                                          : 31
  32-bit subtractor                                     : 1
  4-bit adder                                           : 2
- 6-bit adder                                           : 31
+ 6-bit adder                                           : 32
  6-bit adder carry out                                 : 2
- 7-bit adder                                           : 2
+ 7-bit adder                                           : 3
 # Counters                                             : 14
  10-bit up counter                                     : 2
  13-bit up counter                                     : 2
@@ -1340,15 +1290,18 @@ Macro Statistics
  32-bit up counter                                     : 3
  32-bit updown counter                                 : 2
  4-bit up counter                                      : 3
-# Registers                                            : 1600
- Flip-Flops                                            : 1600
-# Comparators                                          : 44
+# Registers                                            : 1610
+ Flip-Flops                                            : 1610
+# Comparators                                          : 48
  10-bit comparator greatequal                          : 4
  10-bit comparator less                                : 3
  10-bit comparator lessequal                           : 2
  31-bit comparator greatequal                          : 1
  31-bit comparator less                                : 3
+ 32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 31
+ 32-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 2
 # Multiplexers                                         : 6
  1-bit 4-to-1 multiplexer                              : 2
  32-bit 4-to-1 multiplexer                             : 3
@@ -1362,6 +1315,9 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <vcount_0> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <code_1> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <code_4> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <code_7> (without init value) has a constant value of 0 in block <rock_master>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <seed1_6> of sequential type is unconnected in block <rock_master>.
 WARNING:Xst:2677 - Node <seed1_7> of sequential type is unconnected in block <rock_master>.
 WARNING:Xst:2677 - Node <seed1_8> of sequential type is unconnected in block <rock_master>.
@@ -1376,7 +1332,7 @@ WARNING:Xst:2677 - Node <seed2_9> of sequential type is unconnected in block <ro
 WARNING:Xst:2677 - Node <seed2_10> of sequential type is unconnected in block <rock_master>.
 WARNING:Xst:2677 - Node <seed2_11> of sequential type is unconnected in block <rock_master>.
 WARNING:Xst:2677 - Node <seed2_12> of sequential type is unconnected in block <rock_master>.
-WARNING:Xst:2183 - Unit videomem_master: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): location<0>, location<10>, location<11>, location<12>, location<13>, location<14>, location<15>, location<16>, location<17>, location<18>, location<19>, location<1>, location<20>, location<21>, location<22>, location<23>, location<24>, location<25>, location<26>, location<27>, location<28>, location<29>, location<2>, location<30>, location<31>, location<3>, location<4>, location<5>, location<6>, location<7>, location<8>, location<9>, res.
+WARNING:Xst:2183 - Unit videomem_master: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): res.
 WARNING:Xst:2183 - Unit wb_vga640x480: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): res.
 
 Optimizing unit <videomem> ...
@@ -1397,17 +1353,15 @@ Optimizing unit <rock_master> ...
 WARNING:Xst:2677 - Node <wb_ps2_kb/state2_FSM_FFd3> of sequential type is unconnected in block <videomem>.
 WARNING:Xst:2677 - Node <wb_ps2_kb/state2_FSM_FFd2> of sequential type is unconnected in block <videomem>.
 WARNING:Xst:2677 - Node <wb_ps2_kb/scancode_available> of sequential type is unconnected in block <videomem>.
-WARNING:Xst:2677 - Node <rock_master/Mmult_location_mult0001> of sequential type is unconnected in block <videomem>.
 WARNING:Xst:1710 - FF/Latch <wb_intercon/U08/LGNT3> (without init value) has a constant value of 0 in block <videomem>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <videomem_master/state_FSM_FFd11> in Unit <videomem> is equivalent to the following FF/Latch, which will be removed : <rock_master/state_FSM_FFd35> 
-Found area constraint ratio of 100 (+ 5) on block videomem, actual ratio is 62.
+Found area constraint ratio of 100 (+ 5) on block videomem, actual ratio is 63.
 FlipFlop rock_master/state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop rock_master/state_FSM_FFd33 has been replicated 1 time(s)
-FlipFlop videomem_master/state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop videomem_master/state_FSM_FFd9 has been replicated 1 time(s)
+FlipFlop wb_intercon/U08/LGNT1 has been replicated 1 time(s)
 FlipFlop wb_intercon/U08/LGNT2 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -1416,8 +1370,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1885
- Flip-Flops                                            : 1885
+# Registers                                            : 1895
+ Flip-Flops                                            : 1895
 
 =========================================================================
 
@@ -1446,34 +1400,34 @@ Design Statistics
 # IOs                              : 72
 
 Cell Usage :
-# BELS                             : 9137
+# BELS                             : 9122
 #      GND                         : 1
-#      INV                         : 172
-#      LUT1                        : 1224
-#      LUT2                        : 487
-#      LUT2_D                      : 45
-#      LUT2_L                      : 4
-#      LUT3                        : 390
-#      LUT3_D                      : 5
-#      LUT3_L                      : 12
-#      LUT4                        : 2781
-#      LUT4_D                      : 32
-#      LUT4_L                      : 61
-#      MUXCY                       : 2281
-#      MUXF5                       : 227
-#      MUXF6                       : 4
+#      INV                         : 175
+#      LUT1                        : 1231
+#      LUT2                        : 495
+#      LUT2_D                      : 28
+#      LUT2_L                      : 3
+#      LUT3                        : 410
+#      LUT3_D                      : 8
+#      LUT3_L                      : 15
+#      LUT4                        : 2882
+#      LUT4_D                      : 31
+#      LUT4_L                      : 64
+#      MUXCY                       : 2121
+#      MUXF5                       : 239
+#      MUXF6                       : 8
 #      VCC                         : 1
 #      XORCY                       : 1410
-# FlipFlops/Latches                : 1885
-#      FDC                         : 1295
+# FlipFlops/Latches                : 1895
+#      FDC                         : 1296
 #      FDC_1                       : 10
 #      FDCE                        : 133
-#      FDE                         : 413
+#      FDE                         : 420
 #      FDE_1                       : 17
-#      FDP                         : 2
+#      FDP                         : 3
 #      FDP_1                       : 1
 #      FDPE                        : 6
-#      FDR                         : 6
+#      FDR                         : 7
 #      FDRE                        : 2
 # RAMS                             : 5
 #      RAMB16_S36_S36              : 1
@@ -1481,8 +1435,8 @@ Cell Usage :
 # Clock Buffers                    : 3
 #      BUFG                        : 1
 #      BUFGP                       : 2
-# IO Buffers                       : 67
-#      IBUF                        : 2
+# IO Buffers                       : 68
+#      IBUF                        : 3
 #      IOBUF                       : 16
 #      OBUF                        : 49
 # MULTs                            : 8
@@ -1494,11 +1448,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                     2763  out of   4656    59%  
- Number of Slice Flip Flops:           1885  out of   9312    20%  
- Number of 4 input LUTs:               5213  out of   9312    55%  
+ Number of Slices:                     2825  out of   4656    60%  
+ Number of Slice Flip Flops:           1895  out of   9312    20%  
+ Number of 4 input LUTs:               5342  out of   9312    57%  
  Number of IOs:                          72
- Number of bonded IOBs:                  69  out of    232    29%  
+ Number of bonded IOBs:                  70  out of    232    30%  
  Number of BRAMs:                         5  out of     20    25%  
  Number of MULT18X18SIOs:                 8  out of     20    40%  
  Number of GCLKs:                         3  out of     24    12%  
@@ -1524,7 +1478,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1842  |
+clk                                | BUFGP                  | 1852  |
 ps2c                               | BUFGP                  | 28    |
 vga/clk_divider/clk1               | BUFG                   | 20    |
 -----------------------------------+------------------------+-------+
@@ -1534,16 +1488,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-btn<3>                             | IBUF                   | 1447  |
+btn<3>                             | IBUF                   | 1449  |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 12.543ns (Maximum Frequency: 79.726MHz)
+   Minimum period: 12.582ns (Maximum Frequency: 79.479MHz)
    Minimum input arrival time before clock: 7.473ns
-   Maximum output required time after clock: 23.872ns
+   Maximum output required time after clock: 24.012ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1552,10 +1506,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 12.543ns (frequency: 79.726MHz)
-  Total number of paths / destination ports: 182386 / 2153
+  Clock period: 12.582ns (frequency: 79.479MHz)
+  Total number of paths / destination ports: 185550 / 2177
 -------------------------------------------------------------------------
-Delay:               12.543ns (Levels of Logic = 28)
+Delay:               12.582ns (Levels of Logic = 28)
   Source:            vga/word_count_0 (FF)
   Destination:       videomem_master/state_FSM_FFd10 (FF)
   Source Clock:      clk rising
@@ -1589,15 +1543,15 @@ Delay:               12.543ns (Levels of Logic = 28)
      MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_add0001_cy<19> (vga/Madd_adr_o_add0001_cy<19>)
      XORCY:CI->O          14   0.804   1.004  vga/Madd_adr_o_add0001_xor<20> (ADR_O_M1<22>)
      LUT4:I3->O           11   0.704   0.937  wb_intercon/Mmux_DAT_RD541 (DRD<4>)
-     LUT4:I3->O            6   0.704   0.673  videomem_master/state_cmp_eq000511 (videomem_master/N39)
-     LUT4:I3->O            1   0.704   0.424  videomem_master/state_FSM_FFd10-In35_SW0 (N824)
+     LUT4:I3->O            7   0.704   0.712  videomem_master/state_cmp_eq000511 (videomem_master/N38)
+     LUT4:I3->O            1   0.704   0.424  videomem_master/state_FSM_FFd10-In35_SW0 (N839)
      LUT4_L:I3->LO         1   0.704   0.104  videomem_master/state_FSM_FFd10-In35 (videomem_master/state_FSM_FFd10-In35)
      LUT4:I3->O            1   0.704   0.424  videomem_master/state_FSM_FFd10-In77 (videomem_master/state_FSM_FFd10-In77)
      LUT4:I3->O            1   0.704   0.000  videomem_master/state_FSM_FFd10-In109 (videomem_master/state_FSM_FFd10-In)
      FDC:D                     0.308          videomem_master/state_FSM_FFd10
     ----------------------------------------
-    Total                     12.543ns (8.216ns logic, 4.327ns route)
-                                       (65.5% logic, 34.5% route)
+    Total                     12.582ns (8.216ns logic, 4.366ns route)
+                                       (65.3% logic, 34.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ps2c'
@@ -1651,7 +1605,7 @@ Delay:               6.511ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 457 / 457
+  Total number of paths / destination ports: 469 / 469
 -------------------------------------------------------------------------
 Offset:              7.473ns (Levels of Logic = 4)
   Source:            btn<3> (PAD)
@@ -1662,7 +1616,7 @@ Offset:              7.473ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1478   1.218   1.414  btn_3_IBUF (btn_3_IBUF)
+     IBUF:I->O          1481   1.218   1.414  btn_3_IBUF (btn_3_IBUF)
      LUT4:I3->O           21   0.704   1.163  videomem_master/count2_and000011 (videomem_master/timer_and0000)
      LUT3:I2->O            1   0.704   0.424  videomem_master/count2_and0000_SW0 (N15)
      LUT4:I3->O            4   0.704   0.587  videomem_master/count2_and0000 (videomem_master/count2_and0000)
@@ -1695,14 +1649,14 @@ Offset:              5.941ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/clk_divider/clk1'
-  Total number of paths / destination ports: 607635 / 30
+  Total number of paths / destination ports: 684141 / 30
 -------------------------------------------------------------------------
-Offset:              23.872ns (Levels of Logic = 34)
+Offset:              24.012ns (Levels of Logic = 34)
   Source:            vga/line_count_0 (FF)
-  Destination:       RamCS (PAD)
+  Destination:       MemWR (PAD)
   Source Clock:      vga/clk_divider/clk1 rising
 
-  Data Path: vga/line_count_0 to RamCS
+  Data Path: vga/line_count_0 to MemWR
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1738,54 +1692,54 @@ Offset:              23.872ns (Levels of Logic = 34)
      MUXCY:S->O            1   0.464   0.000  vga/Madd_adr_o_add0001_cy<18> (vga/Madd_adr_o_add0001_cy<18>)
      MUXCY:CI->O           0   0.059   0.000  vga/Madd_adr_o_add0001_cy<19> (vga/Madd_adr_o_add0001_cy<19>)
      XORCY:CI->O          14   0.804   1.004  vga/Madd_adr_o_add0001_xor<20> (ADR_O_M1<22>)
-     LUT4:I3->O            4   0.704   0.622  wb_intercon/ACK_I_M_0_and00001131 (wb_intercon/ACK_I_M_0_and00001131)
-     LUT3:I2->O            1   0.704   0.420  sram16ctl/RamCS1 (RamCS_OBUF)
-     OBUF:I->O                 3.272          RamCS_OBUF (RamCS)
+     LUT4_D:I3->O          4   0.704   0.762  wb_intercon/ACK_I_M_0_and00001131 (wb_intercon/ACK_I_M_0_and00001131)
+     LUT4:I0->O            1   0.704   0.420  sram16ctl/we1 (MemWR_OBUF)
+     OBUF:I->O                 3.272          MemWR_OBUF (MemWR)
     ----------------------------------------
-    Total                     23.872ns (18.823ns logic, 5.049ns route)
-                                       (78.8% logic, 21.2% route)
+    Total                     24.012ns (18.823ns logic, 5.189ns route)
+                                       (78.4% logic, 21.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 58199 / 45
+  Total number of paths / destination ports: 58271 / 45
 -------------------------------------------------------------------------
-Offset:              21.543ns (Levels of Logic = 12)
-  Source:            videomem_master/current_line_1 (FF)
+Offset:              21.808ns (Levels of Logic = 12)
+  Source:            rock_master/current_line_0 (FF)
   Destination:       MemAdr<17> (PAD)
   Source Clock:      clk rising
 
-  Data Path: videomem_master/current_line_1 to MemAdr<17>
+  Data Path: rock_master/current_line_0 to MemAdr<17>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              8   0.591   0.757  videomem_master/current_line_1 (videomem_master/current_line_1)
-     MULT18X18SIO:A1->P12    1   4.705   0.420  videomem_master/Mmult_current_addr_mult0001 (videomem_master/current_addr_mult0001<12>)
-     MULT18X18SIO:A12->P12    1   4.705   0.595  videomem_master/Mmult_current_addr_mult0002 (videomem_master/current_addr_mult0002<12>)
-     LUT1:I0->O            1   0.704   0.000  videomem_master/Madd_current_addr_addsub0000_cy<12>_rt (videomem_master/Madd_current_addr_addsub0000_cy<12>_rt)
-     MUXCY:S->O            1   0.464   0.000  videomem_master/Madd_current_addr_addsub0000_cy<12> (videomem_master/Madd_current_addr_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.059   0.000  videomem_master/Madd_current_addr_addsub0000_cy<13> (videomem_master/Madd_current_addr_addsub0000_cy<13>)
-     XORCY:CI->O           1   0.804   0.595  videomem_master/Madd_current_addr_addsub0000_xor<14> (videomem_master/current_addr_addsub0000<14>)
-     LUT1:I0->O            1   0.704   0.000  videomem_master/Madd_current_addr_add0000_cy<14>_rt (videomem_master/Madd_current_addr_add0000_cy<14>_rt)
-     MUXCY:S->O            0   0.464   0.000  videomem_master/Madd_current_addr_add0000_cy<14> (videomem_master/Madd_current_addr_add0000_cy<14>)
-     XORCY:CI->O           1   0.804   0.455  videomem_master/Madd_current_addr_add0000_xor<15> (videomem_master/current_addr<17>)
-     LUT4:I2->O            1   0.704   0.000  wb_intercon/Mmux_ADR182 (wb_intercon/Mmux_ADR181)
-     MUXF5:I0->O           1   0.321   0.420  wb_intercon/Mmux_ADR18_f5 (ADR_I_S<17>)
+     FDC:C->Q             10   0.591   0.882  rock_master/current_line_0 (rock_master/current_line_0)
+     MULT18X18SIO:A0->P12    1   4.705   0.420  rock_master/Mmult_current_addr_mult0002 (rock_master/current_addr_mult0002<12>)
+     MULT18X18SIO:A12->P12    1   4.705   0.595  rock_master/Mmult_current_addr_mult0003 (rock_master/current_addr_mult0003<12>)
+     LUT1:I0->O            1   0.704   0.000  rock_master/Madd_current_addr_addsub0000_cy<12>_rt (rock_master/Madd_current_addr_addsub0000_cy<12>_rt)
+     MUXCY:S->O            1   0.464   0.000  rock_master/Madd_current_addr_addsub0000_cy<12> (rock_master/Madd_current_addr_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  rock_master/Madd_current_addr_addsub0000_cy<13> (rock_master/Madd_current_addr_addsub0000_cy<13>)
+     XORCY:CI->O           1   0.804   0.595  rock_master/Madd_current_addr_addsub0000_xor<14> (rock_master/current_addr_addsub0000<14>)
+     LUT1:I0->O            1   0.704   0.000  rock_master/Madd_current_addr_add0000_cy<14>_rt (rock_master/Madd_current_addr_add0000_cy<14>_rt)
+     MUXCY:S->O            0   0.464   0.000  rock_master/Madd_current_addr_add0000_cy<14> (rock_master/Madd_current_addr_add0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.595  rock_master/Madd_current_addr_add0000_xor<15> (ADR_O_M2<17>)
+     LUT2:I0->O            1   0.704   0.000  wb_intercon/Mmux_ADR181 (wb_intercon/Mmux_ADR18)
+     MUXF5:I1->O           1   0.321   0.420  wb_intercon/Mmux_ADR18_f5 (ADR_I_S<17>)
      OBUF:I->O                 3.272          MemAdr_17_OBUF (MemAdr<17>)
     ----------------------------------------
-    Total                     21.543ns (18.301ns logic, 3.242ns route)
-                                       (85.0% logic, 15.0% route)
+    Total                     21.808ns (18.301ns logic, 3.507ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 68.62 secs
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 58.86 secs
  
 --> 
 
-Total memory usage is 415136 kilobytes
+Total memory usage is 408992 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  180 (   0 filtered)
-Number of infos    :   42 (   0 filtered)
+Number of warnings :  155 (   0 filtered)
+Number of infos    :   39 (   0 filtered)
 

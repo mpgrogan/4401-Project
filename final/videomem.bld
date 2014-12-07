@@ -1374,7 +1374,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 178240 kilobytes
 
 Writing NGD file "videomem.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
+Total REAL time to NGDBUILD completion:  8 sec
 Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "videomem.bld"...

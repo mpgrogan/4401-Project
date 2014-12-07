@@ -43,7 +43,8 @@ entity videomem_master is
 			 irq_i : in std_logic;
 			 irqv_i: in std_logic_vector(1 downto 0);
 			 leds_o : out std_logic_vector(7 downto 0);
-			 location : inout std_logic_vector(31 downto 0);
+			 xlocation : inout std_logic_vector(7 downto 0);
+			 ylocation : inout std_logic_vector(7 downto 0);
 			 res : inout std_logic);
 end videomem_master;
 
@@ -377,10 +378,10 @@ begin
 								move_counter <= 0;
 								if (l_down = '1') then
 									l_down := '0';
-									if (ship_char /= 0 ) then ship_char <= ship_char - 1; end if;
+									if (ship_char > 18 ) then ship_char <= ship_char - 1; end if;
 								elsif (r_down = '1') then
 									r_down := '0'; 
-									if (ship_char /= CHARS_PER_LINE ) then ship_char <= ship_char + 1; end if;
+									if (ship_char < CHARS_PER_LINE - 18 ) then ship_char <= ship_char + 1; end if;
 								elsif (u_down = '1') then
 									u_down := '0';
 									if (ship_line /= 0) then ship_line <= ship_line - 1; end if;
@@ -456,8 +457,11 @@ begin
 	stb_o <= req;
 	cyc_o <= req;
 
+
+		xlocation <= conv_std_logic_vector(ship_line,8);
+		ylocation <= conv_std_logic_vector(ship_char,8);
 	--reset1 <= '1' when res = '1';
-	--location <= conv_std_logic_vector(current_line*current_char,32);
+	
 		
 end Behavioral;
 --
